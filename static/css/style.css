@@ -428,7 +428,7 @@ p {
   z-index: 2;
   background: #fff;
   overflow: hidden;
-  min-height: 100%;
+  min-height: relative%;
 }
 .header-background {
   position: absolute;
@@ -1921,10 +1921,10 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   background-color: #a33025;
 }
 .crew-4 .members .member:hover .photo {
-  opacity: 40;
-  filter: alpha(opacity=4000);
-  opacity: 0.4;
-  filter: alpha(opacity=40);
+  opacity: 100;
+  filter: alpha(opacity=10000);
+  opacity: 0.1;
+  filter: alpha(opacity=100);
 }
 .crew-4 .members .member:hover .overlay {
   opacity: 100;

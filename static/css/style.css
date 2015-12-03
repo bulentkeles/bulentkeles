@@ -825,7 +825,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   color: #fff;
 }
 /**
- * Header 1 stylesheet  
+ * Header 1 stylesheet
  * */
 .header-1 {
   left: 0;
@@ -1075,7 +1075,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   left: 45px;
 }
 /**
- * Header 2 stylesheet  
+ * Header 2 stylesheet
  * */
 .header-2 {
   z-index: 100;
@@ -1225,7 +1225,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   background-color: #a33025;
 }
 /**
- * Content 17 stylesheet  
+ * Content 17 stylesheet
  * */
 .content-17 {
   position: relative;
@@ -1283,7 +1283,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   position: relative;
 }
 /**
- * Header 15 stylesheet  
+ * Header 15 stylesheet
  * */
 .header-15-startup-antiflicker {
   background: #171717 !important;
@@ -1498,7 +1498,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   }
 }
 /**
- * Content 11 stylesheet  
+ * Content 11 stylesheet
  * */
 .content-11 {
   position: relative;
@@ -1540,7 +1540,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   }
 }
 /**
- * Content 14 stylesheet  
+ * Content 14 stylesheet
  * */
 .content-14 {
   padding-top: 125px;
@@ -1788,7 +1788,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   font-weight: 300;
 }
 /**
- * Crew 4 stylesheet  
+ * Crew 4 stylesheet
  * */
 .crew-4 {
   padding-top: 110px;
@@ -1898,7 +1898,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   color: #7f8c8d;
 }
 .crew-4 .members .name {
-  color: #1abc9c;
+  color: #a33025;
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 14px;
@@ -1919,7 +1919,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   color: #95a5a6;
 }
 .crew-4 .members .member:hover .photo-wrapper {
-  background-color: #1abc9c;
+  background-color: #a33025;
 }
 .crew-4 .members .member:hover .photo {
   opacity: 40;
@@ -1953,7 +1953,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   }
 }
 /**
- * Footer 3 stylesheet  
+ * Footer 3 stylesheet
  * */
 .footer-3 {
   font-size: 14px;

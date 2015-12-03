@@ -1141,7 +1141,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   width: 100%;
   position: relative;
   padding-top: 215px;
-  padding-bottom: 115px;
+
   color: white;
   text-align: center;
 }
@@ -1747,7 +1747,6 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 .content-28 {
   position: relative;
   overflow: hidden;
-  padding-top: 128px;
   padding-bottom: 0;
   text-align: center;
 }
@@ -1766,7 +1765,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 }
 .content-28 .col-sm-10 > img {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 100px;
   position: relative;
 }
 @media (max-width: 480px) {

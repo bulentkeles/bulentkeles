@@ -838,6 +838,8 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 .header-1 > .container {
   position: relative;
 }
+
+
 .header-1 .navbar {
   position: absolute;
   z-index: 2;
@@ -908,8 +910,11 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   }
 }
 .header-1-sub .container {
-  position: relative;
+  max-width: 700px;
+  position:relative;
+  padding-bottom: 150px;
 }
+
 @media (max-width: 767px) {
   .header-1-sub .container {
     margin-right: 5px;
@@ -917,7 +922,6 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   }
 }
 .header-1-sub h3 {
-padding-bottom: 150px;
   margin: 0 0 20px 0;
   font-size: 30px;
   font-weight: normal;
@@ -1091,6 +1095,7 @@ padding-bottom: 150px;
 .header-2 > .container {
   position: relative;
 }
+
 .header-2 .navbar {
   position: absolute;
   z-index: 2;

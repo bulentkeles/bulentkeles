@@ -1214,11 +1214,11 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   background-color: #33485e;
 }
 .header-2-sub .btn.btn-danger {
-  background-color: #c0392b;
+  background-color: #2980b9;
 }
 .header-2-sub .btn.btn-danger:hover,
 .header-2-sub .btn.btn-danger:focus {
-  background-color: #cd6155;
+  background-color: #3498db;
 }
 .header-2-sub .btn.btn-danger:active,
 .header-2-sub .btn.btn-danger.active {
@@ -1508,7 +1508,6 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   color: #ffffff;
   font-size: 30px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #a33025;
 }
 .content-11 > .container {
   position: relative;
@@ -2630,9 +2629,6 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 }
 
 
-
-
-
 /**
  * Footer 3 stylesheet
  * */
@@ -2743,6 +2739,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 }
 .footer-3 .address {
   line-height: 1.6;
+
 }
 @media (max-width: 767px) {
   .footer-3 .row > [class*="col-sm-"] {

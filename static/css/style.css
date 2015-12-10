@@ -26,7 +26,7 @@ a {
   transition: color 0.25s, background 0.25s;
 }
 a:hover {
-  color: #a33025;
+  color: #9b59b6;
   text-decoration: none;
 }
 h1,
@@ -364,7 +364,7 @@ li {
   margin-right: 4px;
   line-height: inherit;
   display: inline-block;
-  vertical-align: top;
+  vertical-align:top;
 }
 .input-group-btn .btn {
   background: #bdc3c7;
@@ -898,21 +898,22 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   z-index: 50;
   left: 0;
   width: 100%;
-  height: 630px;
   padding: 0;
   overflow: hidden;
   color: white;
   background-color: #222527;
+  padding-top: 150px;
 }
+
+
 @media (max-width: 480px) {
   .header-1-sub {
-    height: 420px;
+    height: 430px;
   }
 }
 .header-1-sub .container {
   max-width: 700px;
-  position:relative;
-  padding-bottom: 150px;
+  position: relative;
 }
 
 @media (max-width: 767px) {
@@ -928,17 +929,18 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   color: #ffffff;
   font-weight: 300;
   text-align: center;
+  vertical-align: middle;
 }
 @media (max-width: 600px) {
   .header-1-sub h3 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: normal;
     color: #ffffff;
   }
 }
 @media (max-width: 480px) {
   .header-1-sub h3 {
-    font-size: 26px;
+    font-size: 20px;
     font-weight: normal;
     color: #ffffff;
     margin: 0 0 24px 0;
@@ -993,29 +995,13 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   transform-style: preserve-3d;
 }
 .header-1-sub .pt-page-1 .background {
-  background-image: url("../../startup/common-files/img/NY_002.jpg");
   opacity: 75;
   filter: alpha(opacity=7500);
   opacity: 0.75;
   filter: alpha(opacity=75);
   background-position: 50% 30%;
 }
-.header-1-sub .pt-page-2 .background {
-  background-image: url("../../startup/common-files/img/header/img-2.jpg");
-  opacity: 75;
-  filter: alpha(opacity=7500);
-  opacity: 0.75;
-  filter: alpha(opacity=75);
-  background-position: 50% 30%;
-}
-.header-1-sub .pt-page-3 .background {
-  background-image: url("../../startup/common-files/img/header/img-3.jpg");
-  opacity: 75;
-  filter: alpha(opacity=7500);
-  opacity: 0.75;
-  filter: alpha(opacity=75);
-  background-position: 50% 30%;
-}
+
 .header-1-sub .pt-page-current,
 .header-1-sub .no-js .pt-page {
   visibility: visible;
@@ -2040,7 +2026,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 .content-18 .carousel .controls > .carousel-control.disabled {
  z-index: auto;
  background: none;
- border: 3px solid #a33025;
+ border: 3px solid #9b59b6;
  pointer-events: none;
  cursor: default;
 }

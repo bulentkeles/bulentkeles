@@ -932,7 +932,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
     font-size: 22px;
     font-weight: 300;
     color: #ffffff;
-    padding-bottom: 50px;
+    padding-bottom: 75px;
   }
 }
 @media (max-width: 480px) {

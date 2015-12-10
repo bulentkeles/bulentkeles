@@ -894,24 +894,23 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   color: rgba(0, 0, 0, 0.4);
 }
 .header-1-sub {
+  width: 100%;
   position: relative;
   z-index: 50;
-  left: 0;
-  width: 100%;
-  padding: 0;
   overflow: hidden;
   color: white;
   background-color: #222527;
   padding-top: 150px;
 }
 
-
 @media (max-width: 480px) {
   .header-1-sub {
-    height: 430px;
+
   }
 }
 .header-1-sub .container {
+  margin: auto;
+  width: %60;
   max-width: 700px;
   position: relative;
 }
@@ -923,29 +922,34 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   }
 }
 .header-1-sub h3 {
-  margin: 0 0 20px 0;
   font-size: 30px;
-  font-weight: normal;
   color: #ffffff;
   font-weight: 300;
   text-align: center;
-  vertical-align: middle;
+  padding-top: 100px;
 }
+
 @media (max-width: 600px) {
   .header-1-sub h3 {
-    font-size: 25px;
-    font-weight: normal;
+    font-size: 22px;
+    font-weight: 300;
     color: #ffffff;
   }
 }
 @media (max-width: 480px) {
   .header-1-sub h3 {
     font-size: 20px;
-    font-weight: normal;
+    font-weight: 300;
     color: #ffffff;
     margin: 0 0 24px 0;
   }
 }
+
+.header-1-sub p {
+  margin: 0 0 20px 0;
+  padding-top: 20px;
+}
+
 .header-1-sub .lead {
   font-size: 30px;
   font-weight: normal;

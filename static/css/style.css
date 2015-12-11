@@ -900,7 +900,6 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   overflow: hidden;
   color: white;
   background-color: #222527;
-  padding-top: 210px;
 }
 
 @media (max-width: 480px) {
@@ -921,18 +920,19 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   }
 }
 .header-1-sub h3 {
+  padding-top: 210px;
   font-size: 30px;
   color: #ffffff;
   font-weight: 300;
   text-align: center;
 }
 
+
 @media (max-width: 600px) {
   .header-1-sub h3 {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 300;
     color: #ffffff;
-    padding-bottom: 100px;
   }
 }
 @media (max-width: 480px) {
@@ -945,8 +945,16 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   }
 }
 
+@media (max-width: 320px) {
+  .header-1-sub h3 {
+    padding-top: 150px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffffff;
+  }
+}
+
 .header-1-sub p {
-  margin: 0 0 20px 0;
   padding-top: 20px;
 }
 
@@ -972,104 +980,70 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
     color: #ffffff;
   }
 }
-.header-1-sub .pt-perspective {
-  position: relative;
-  height: 100%!important;
-  -webkit-perspective: 1200px;
-  -moz-perspective: 1200px;
-  perspective: 1200px;
-}
-.header-1-sub .pt-page {
-  width: 100%;
-  height: 100%!important;
-  position: absolute;
-  top: 0;
-  left: 0;
-  visibility: hidden;
-  overflow: hidden;
-  background-color: #363940;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-.header-1-sub .pt-page-1 .background {
-  opacity: 75;
-  filter: alpha(opacity=7500);
-  opacity: 0.75;
-  filter: alpha(opacity=75);
-  background-position: 50% 30%;
-}
 
-.header-1-sub .pt-page-current,
-.header-1-sub .no-js .pt-page {
-  visibility: visible;
-  z-index: 1;
-}
-.header-1-sub .pt-page-ontop {
-  z-index: 999;
-}
-.header-1-sub .page-transitions * {
-  line-height: normal;
-}
-.header-1-sub .page-transitions .background {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-.header-1-sub .page-transitions .caption {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 140px;
-}
-@media (max-width: 480px) {
-  .header-1-sub .page-transitions .caption {
-    bottom: 73px;
-  }
-}
-.header-1-sub .page-transitions .controls > * {
-  position: absolute;
-  left: 15;
-  top: 410px;
-  z-index: 1000;
-  width: 20px;
-  overflow: hidden;
-  text-decoration: none;
-  font-size: 18px;
-  color: #7f8c8d;
-  font-weight: normal;
-  font-style: normal;
-  color: #ffffff;
-  -webkit-transition: color 0.25s;
-  -moz-transition: color 0.25s;
-  -o-transition: color 0.25s;
-  transition: color 0.25s;
-}
-.header-1-sub .page-transitions .controls > *:hover,
-.header-1-sub .page-transitions .controls > *:focus,
-.header-1-sub .page-transitions .controls > *.active {
-  color: rgba(0, 0, 0, 0.4);
-}
+
 @media (max-width: 480px) {
   .header-1-sub .page-transitions .controls > * {
     top: 363px;
   }
 }
-.header-1-sub .page-transitions .controls > *.control-next {
-  left: 45px;
+
+.header-1-sub .btns {
+  display: inline-block;
+  margin-top: 15px;
 }
+@media (max-width: 480px) {
+  .header-1-sub .btns {
+    margin-top: 48px;
+    display: block;
+  }
+}
+.header-1-sub .btns .btn {
+  min-width: 160px;
+}
+
+@media (max-width: 480px) {
+  .header-1-sub .btns .btn {
+    float: none;
+    display: block;
+    margin-top: 10px;
+  }
+  .header-1-sub .btns .btn:first-child {
+    margin-top: 0;
+  }
+}
+.header-1-sub .btns .btn + .btn {
+  margin-left: 20px;
+}
+@media (max-width: 480px) {
+  .header-1-sub .btns .btn + .btn {
+    margin-left: 0;
+  }
+}
+.header-1-sub .btn.btn-inverse {
+  background-color: #3c556e;
+}
+.header-1-sub .btn.btn-inverse:hover,
+.header-1-sub .btn.btn-inverse:focus {
+  background-color: #63778b;
+}
+.header-1-sub .btn.btn-inverse:active,
+.header-1-sub .btn.btn-inverse.active {
+  background-color: #33485e;
+}
+.header-1-sub .btn.btn-danger {
+  background-color: #8e44ad;
+}
+.header-1-sub .btn.btn-danger:hover,
+.header-1-sub .btn.btn-danger:focus {
+  background-color: #9b59b6;
+}
+.header-1-sub .btn.btn-danger:active,
+.header-1-sub .btn.btn-danger.active {
+  background-color: #8528ac;
+}
+
+
 /**
  * Header 2 stylesheet
  * */
@@ -1165,59 +1139,6 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   color: #506e8c;
   font-weight: 300;
   letter-spacing: 2px;
-}
-.header-1-sub .btns {
-  display: inline-block;
-  margin-top: 15px;
-}
-@media (max-width: 480px) {
-  .header-1-sub .btns {
-    margin-top: 48px;
-    display: block;
-  }
-}
-.header-1-sub .btns .btn {
-  min-width: 160px;
-}
-@media (max-width: 480px) {
-  .header-1-sub .btns .btn {
-    float: none;
-    display: block;
-    margin-top: 10px;
-  }
-  .header-1-sub .btns .btn:first-child {
-    margin-top: 0;
-  }
-}
-.header-1-sub .btns .btn + .btn {
-  margin-left: 20px;
-}
-@media (max-width: 480px) {
-  .header-1-sub .btns .btn + .btn {
-    margin-left: 0;
-  }
-}
-.header-1-sub .btn.btn-inverse {
-  background-color: #3c556e;
-}
-.header-1-sub .btn.btn-inverse:hover,
-.header-1-sub .btn.btn-inverse:focus {
-  background-color: #63778b;
-}
-.header-1-sub .btn.btn-inverse:active,
-.header-1-sub .btn.btn-inverse.active {
-  background-color: #33485e;
-}
-.header-1-sub .btn.btn-danger {
-  background-color: #8e44ad;
-}
-.header-1-sub .btn.btn-danger:hover,
-.header-1-sub .btn.btn-danger:focus {
-  background-color: #9b59b6;
-}
-.header-1-sub .btn.btn-danger:active,
-.header-1-sub .btn.btn-danger.active {
-  background-color: #8528ac;
 }
 
 /**
@@ -1519,6 +1440,9 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 @media (max-width: 480px) {
   .content-11 > .container > span {
     display: block;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .content-11 .btn {
     margin: 30px 0 0;
@@ -1527,6 +1451,9 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 @media (max-width: 614px) {
   .content-11 > .container > span {
     display: block;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .content-11 .btn {
     margin: 30px 0 0;

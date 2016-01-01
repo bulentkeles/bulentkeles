@@ -2792,13 +2792,14 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   .footer-3.v-center.row > *,
   .footer-3 .v-center.row > * {
     display: block;
-    vertical-align: baseline;
+    vertical-align:baseline;
   }
 }
 
 .footer-3 .row.v-center {
   padding-left: 0;
   padding-right: 0;
+  text-align: center;
 }
 .footer-3 a {
   color: #ffffff;

@@ -1025,6 +1025,18 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   background-color: #3c556e;
   }
 
+  @media (max-width: 480px) {
+    .header-1-sub .btn.btn-inverse {
+      width:60%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .header-1-sub .btn.btn-danger {
+      width:60%;
+    }
+  }
+
 .header-1-sub .btn.btn-inverse:hover,
 .header-1-sub .btn.btn-inverse:focus {
   background-color: #63778b;

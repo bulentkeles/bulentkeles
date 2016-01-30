@@ -1007,6 +1007,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
     float: none;
     display: block;
     margin-top: 10px;
+
   }
   .header-1-sub .btns .btn:first-child {
     margin-top: 0;
@@ -1022,7 +1023,8 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 }
 .header-1-sub .btn.btn-inverse {
   background-color: #3c556e;
-}
+  }
+
 .header-1-sub .btn.btn-inverse:hover,
 .header-1-sub .btn.btn-inverse:focus {
   background-color: #63778b;
@@ -1033,7 +1035,9 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 }
 .header-1-sub .btn.btn-danger {
   background-color: #8e44ad;
+  margin: 5px 0;
 }
+
 .header-1-sub .btn.btn-danger:hover,
 .header-1-sub .btn.btn-danger:focus {
   background-color: #9b59b6;

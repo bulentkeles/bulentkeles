@@ -615,7 +615,7 @@ section * {
   }
 }
 /**
- * Content 16 stylesheet  
+ * Content 16 stylesheet
  * */
 .content-16 {
   position: relative;
@@ -769,7 +769,7 @@ section * {
   }
 }
 /**
- * Project 3 stylesheet  
+ * Project 3 stylesheet
  * */
 .projects-3 {
   padding-top: 110px;
@@ -866,7 +866,7 @@ section * {
   color: #7f8c8d;
 }
 .projects-3 .projects .name {
-  color: #34495e;
+  color: #95a5a6;
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 10px;
@@ -876,7 +876,7 @@ section * {
   transition: color 0.4s;
 }
 .projects-3 .projects .project:hover .photo-wrapper {
-  background-color: #1abc9c;
+  background-color: #34495e;
 }
 .projects-3 .projects .project:hover .photo {
   opacity: 40;
@@ -891,7 +891,7 @@ section * {
   filter: alpha(opacity=100);
 }
 .projects-3 .projects .project:hover .name {
-  color: #1abc9c;
+  color: #34495e;
 }
 @media (max-width: 767px) {
   .projects-3 .projects {
@@ -907,7 +907,7 @@ section * {
   }
 }
 /**
- * Footer 5 stylesheet  
+ * Footer 5 stylesheet
  * */
 .footer-5 {
   padding-top: 100px;

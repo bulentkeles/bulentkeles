@@ -160,110 +160,123 @@ td, th {
     content: "";
     display: table; }
 
-.grid-100 {
+.grid100 {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%;
-}
+  width: 100%;}
 
-  .grid-100:last-child {
-    margin-right: 0;
-}
+  .grid100:last-child {
+    margin-right: 0;}
 
-.grid-75 {
+.grid75 {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 74.41059%; }
-  .grid-75:last-child {
+  .grid75:last-child {
     margin-right: 0; }
   @media screen and (max-width: 769px) {
-    .grid-75 {
+    .grid75 {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 100%; }
-      .grid-75:last-child {
+      .grid75:last-child {
         margin-right: 0; } }
 
-.grid-60 {
+
+
+        .grid65 {
+          margin: auto;
+          width: 65%; }
+            .grid65:last-child {
+              margin: auto; }
+          @media screen and (max-width: 769px) {
+            .grid65 {
+              margin: auto;
+              width: 100%; }
+              .grid65:last-child {
+                margin-right: 0; } }
+
+
+.grid60 {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 65.88078%; }
-  .grid-60:last-child {
+  .grid60:last-child {
     margin-right: 0; }
   @media screen and (max-width: 769px) {
-    .grid-60 {
+    .grid60 {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 100%; }
-      .grid-60:last-child {
+      .grid60:last-child {
         margin-right: 0; } }
 
-.grid-50 {
+.grid50 {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%; }
-  .grid-50:last-child {
+  .grid50:last-child {
     margin-right: 0; }
   @media screen and (max-width: 769px) {
-    .grid-50 {
+    .grid50 {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 100%; }
-      .grid-50:last-child {
+      .grid50:last-child {
         margin-right: 0; } }
 
-.grid-33 {
+.grid33 {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%; }
-  .grid-33:last-child {
+  .grid33:last-child {
     margin-right: 0; }
-  .grid-33:nth-child(3n) {
+  .grid33:nth-child(3n) {
     margin-right: 0; }
-  .grid-33:nth-child(3n+1) {
+  .grid33:nth-child(3n+1) {
     clear: left; }
   @media screen and (max-width: 769px) {
-    .grid-33 {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 100%; }
-      .grid-33:last-child {
+  .grid33 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+      .grid33:last-child {
         margin-right: 0; } }
 
-.grid-25 {
+.grid25 {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 23.23176%; }
-  .grid-25:last-child {
+  .grid25:last-child {
     margin-right: 0; }
   @media screen and (max-width: 769px) {
-    .grid-25 {
+      .grid25 {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 100%; }
-      .grid-25:last-child {
-        margin-right: 0; } }
+      .grid25:last-child {
+      margin-right: 0; } }
 
 body {
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: 'Roboto', sans-serif, Helvetica, Arial, sans-serif;
   font-size: 17px;
   line-height: 26px;
   color: #5c5c5c;
   -webkit-font-smoothing: antialiased; }
 
 ::selection {
-  background: #FFE526; }
+  background: #B5E0FF; }
 
 a {
   text-decoration: none;
@@ -302,11 +315,23 @@ h3 {
   text-align: center; }
 
 h4 {
+  color: #646464;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  text-align: center;
+  margin: 24 0 12px 0;
+  font-size: 1.6em;}
+  h4 i {
+    margin-right: 4px; }
+
+/* backup
+h4 {
   color: #212121;
   font-weight: 600;
   margin: 24 0 12px 0; }
   h4 i {
     margin-right: 4px; }
+ */
 
 h5 {
   color: rgba(0, 0, 0, 0.4);
@@ -424,6 +449,15 @@ hr {
 
 strong {
   font-wight: 400; }
+
+.v-border {
+  margin: auto;
+  padding: 20px;
+  border-right: 1px solid #dfe2e6;}
+  @media screen and (max-width: 769px) {
+    .v-border {
+       border: none;} }
+
 
 .summary p {
   font-size: 22px;
@@ -546,15 +580,15 @@ img {
         text-align: center;
         width: 100%;
         font-size: 28px; } }
-  .page-title .breakdance {
+  .page-title .break {
     width: 100px;
     height: 10px;
-    background: #2196F3;
+    background: #D7263D;
     clear: both;
     display: block;
     margin: 24px 0 12px; }
     @media screen and (max-width: 769px) {
-      .page-title .breakdance {
+      .page-title .break {
         margin: 12px auto; } }
 
 .button {
@@ -568,17 +602,17 @@ img {
   @media screen and (max-width: 599px) {
     .thumbs {
       margin-top: 48px; } }
-  .thumbs .grid-33 h3 {
+  .thumbs .grid33 h3 {
     font-size: 16px;
     margin: 12px 0 24px;
     display: inline-block;
     text-align: center;
     width: 100%; }
     @media screen and (max-width: 599px) {
-      .thumbs .grid-33 h3 {
+      .thumbs .grid33 h3 {
         margin: 12px 0 48px; } }
 
-.work .grid-50 {
+.work .grid50 {
   margin-top: 40px;
   margin-bottom: 40px; }
 

@@ -497,14 +497,20 @@ strong {
         transition: 0.35s ease-in-out; }
         .social li a i.twitter:hover {
           color: #55ACEE; }
+        .social li a i.facebook:hover {
+          color: #3a5795; }
         .social li a i.dribbble:hover {
           color: #EC4989; }
         .social li a i.instagram:hover {
           color: #48779C; }
         .social li a i.linkedin:hover {
           color: #24679F; }
-        .social li a i.email:hover {
-          color: #4285F4; }
+        .social li a i.github:hover {
+          color: #000000; }
+        .social li a i.medium:hover {
+          color: #00ab6b; }
+        .social li a i.envelope:hover {
+          color: #0197F6; }
 
 body {
   background: #fff;
@@ -580,15 +586,15 @@ img {
         text-align: center;
         width: 100%;
         font-size: 28px; } }
-  .page-title .break {
+  .page-title .line {
     width: 100px;
     height: 10px;
-    background: #D7263D;
+    background: #0197F6;
     clear: both;
     display: block;
     margin: 24px 0 12px; }
     @media screen and (max-width: 769px) {
-      .page-title .break {
+      .page-title .line {
         margin: 12px auto; } }
 
 .button {

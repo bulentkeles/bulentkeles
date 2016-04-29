@@ -168,7 +168,7 @@ td, th {
 .grid80 {
   margin:auto;
   clear: both;
-  padding: 70px 40px 70px 40px;
+  padding: 70px 40px 120px 40px;
   width: 80%;}
   @media screen and (max-width: 750px) {
     .grid80 {
@@ -536,28 +536,24 @@ img {
   width: 100%;
 }
 
+.centralize {
+  margin: auto;
+}
+
 .avatar {
   margin: auto;
   margin-top: 50px;
   width: 150px;
   border-radius: 100px;
-  transform: rotateY(10deg);
 }
 
-.header-img {
-  overflow: hidden;
-  display: inline-block; }
-  .header-img img {
-    display: block;
-    margin: 0;
-    width: 100%; }
-    @media screen and (max-width: 769px) {
-      .header-img img {
-        margin: 0 -25%;
-        width: 150%; } }
+.avatar:hover {
+  transform: rotateX(180deg);
+}
+
 
 .page-title {
-  margin: 0 0 60px; }
+  margin: 60px 0 50px; }
   .page-title h1 {
     font-size: 90px;
     color: #212121;
@@ -576,7 +572,7 @@ img {
     clear: both;
     text-align:center;
     font-weight: 300;
-    margin: 12px 0 40px; }
+    margin: 12px 0 0 0; }
     @media screen and (max-width: 769px) {
       .page-title .description {
         margin: 12px 0 20px;

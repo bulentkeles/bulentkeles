@@ -536,15 +536,11 @@ img {
   width: 100%;
 }
 
-.centralize {
-  margin: auto;
-}
-
 .avatar {
   margin: auto;
-  margin-top: 50px;
   width: 150px;
   border-radius: 100px;
+  transform: rotateX(180deg);
 }
 
 .avatar:hover {

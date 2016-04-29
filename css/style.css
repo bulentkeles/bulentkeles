@@ -538,6 +538,7 @@ img {
 
 .avatar {
   margin: auto;
+  margin-top: 50px;
   width: 150px;
   border-radius: 100px;
   transform: rotateY(10deg);
@@ -556,10 +557,9 @@ img {
         width: 150%; } }
 
 .page-title {
-  background: inherit;
-  margin: 100px 0 60px; }
+  margin: 0 0 60px; }
   .page-title h1 {
-    font-size: 96px;
+    font-size: 90px;
     color: #212121;
     font-weight: 600;
     text-align: center;

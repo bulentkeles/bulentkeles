@@ -633,6 +633,18 @@ img {
     width: 100%;
     display: block; }
 
+
+
+.prototype {
+  height: inherit;
+  background: #cccccc no-repeat center;
+}
+
+iframe {
+      -webkit-filter: drop-shadow(5px 0px 5px #333);
+      filter:         drop-shadow(5px 0px 5px #333);
+}
+
 footer {
   text-align: center;
   display: inline-block; }

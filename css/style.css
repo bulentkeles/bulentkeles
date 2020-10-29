@@ -42,10 +42,6 @@ b, strong {
 dfn {
   font-style: italic; }
 
-h1 {
-  font-size: 2em;
-  margin: .67em 0; }
-
 mark {
   background: #ff0;
   color: #000; }
@@ -273,19 +269,20 @@ h1, h2, h3, h4, h5, h6 {
   color: #111111;
   display: block;
   font-weight: 400;
-  line-height: 1.4em;
-  margin-bottom: 24px; }
+  line-height: 1.2em;
+}
 
 h1 {
   font-size: 42px;
-  line-height: 54px;
   padding: 0;
   font-weight: 600;
-  margin: 12px 0 24px; }
+}
+
   @media screen and (max-width: 750px) {
     h1 {
       font-size: 32px;
-      line-height: 42px; } }
+      line-height: 1em; }
+    }
 
 h2 {
   font-size: 24px;
@@ -547,11 +544,8 @@ img {
   transform: rotateX(180deg);
 }
 
-
-.page-title {
-  margin: 60px 0 50px; }
-  .page-title h1 {
-    font-size: 90px;
+.page-title h1 {
+    font-size: 4em;
     color: #212121;
     font-weight: 600;
     text-align: center;
@@ -560,21 +554,17 @@ img {
       .page-title h1 {
         text-align: center;
         width: 100%;
-        font-size: 54px;
+        font-size: 3em;
         margin: 0 0 24px; } }
+
   .page-title .description {
-    font-size: 26px;
+    font-size: 1.2em;
     color: #5c5c5c;
     clear: both;
     text-align:center;
     font-weight: 300;
-    margin: 12px 0 0 0; }
-    @media screen and (max-width: 769px) {
-      .page-title .description {
-        margin: 12px 0 20px;
-        text-align: center;
-        width: 100%;
-        font-size: 28px; } }
+    margin: 12px 0 0 0;
+      }
     .page-title .line {
       margin: auto;
       text-align: center;

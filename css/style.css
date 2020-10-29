@@ -10,8 +10,6 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
 
-body {
-  margin: 0; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
@@ -201,7 +199,7 @@ td, th {
         margin-right: 0; } }
 
     .grid45 {
-      margin: 20px 20px;
+      margin: 24px 24px;
       width: 45%;
       display: inline-block;
       clear: both;
@@ -251,7 +249,7 @@ td, th {
       margin-right: 0; } }
 
 body {
-  font-family: 'Roboto', sans-serif, Helvetica, Arial, sans-serif;
+  font-family: 'Manrope', sans-serif, Helvetica, Arial, sans-serif;
   font-size: 17px;
   line-height: 26px;
   color: #5c5c5c;
@@ -302,11 +300,9 @@ h3 {
 span {
   margin: auto;
   color: #989999;
-  font-family: 'Roboto Slab', serif;
   font-weight: 300;
-  line-height: 32px;
   text-align: center;
-  font-size: 1.6em;}
+  }
 
   @media screen and (max-width: 750px) {
     span {
@@ -341,6 +337,10 @@ p {
   display: block;
   padding: 0 0 12px;
   margin: 0; }
+  transition: height ,5s;
+-webkit-transition: height ,5s;
+-moz-transition: height ,5s;
+
   @media screen and (max-width: 599px) {
     p {
       font-size: 0.9em;
@@ -477,7 +477,7 @@ strong {
       padding: 8px 16px 0;
       margin: 8px 0 0;
       vertical-align: middle;
-      font-size: 22px;
+      font-size: 1em;
       font-weight: normal;
       display: inline-block;
       -webkit-transition: color 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -624,7 +624,6 @@ img {
     display: block; }
 
 
-
 .prototype {
   height: inherit;
   background: #cccccc no-repeat center;
@@ -634,10 +633,6 @@ iframe {
       -webkit-filter: drop-shadow(5px 0px 5px #333);
       filter:         drop-shadow(5px 0px 5px #333);
 }
-
-footer {
-  text-align: center;
-  display: inline-block; }
 
 header {
   background: inherit;
@@ -651,11 +646,35 @@ header {
       margin: 12px 4%; } }
 
 
+
+      small {
+        opacity: 0;
+      }
+
+      .show-description p {
+        height: 150px;
+      }
+
+      .show-description small {
+        opacity: 1;
+      }
+
+      .projectYear {
+        float: right;
+      }
+
+
+
+
 footer {
+  text-align: center;
+  display: inline-block;
   display: block; }
+
   footer .row {
     margin-top: 40px;
     margin-bottom: 40px; }
+
     footer .row p {
       text-align: center;
       width: 100%;

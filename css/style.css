@@ -25,6 +25,7 @@ audio:not([controls]) {
 [hidden], template {
   display: none; }
 
+
 a {
   background-color: transparent;
   text-decoration: none;
@@ -185,6 +186,8 @@ img {
 }
 
 
+
+
 h1, h2, h3, h4, h5, h6 {
   display: block;
   line-height: 1.2em;
@@ -261,6 +264,7 @@ p {
     }
 
 
+
 strong {
   font-wight: 400; }
 
@@ -274,13 +278,14 @@ strong {
 
 .social {
   margin: auto;
-  text-align: center; }
+  text-align: center;
+}
 
 .social li {
-    display: inline-block;
+  display: inline-block;
   }
 
-.social li a {
+.social a {
       display: inline-block;
       padding: 12px 12px;
       vertical-align: middle;
@@ -289,7 +294,7 @@ strong {
       -webkit-transition: color 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
       -moz-transition: color 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
       transition: color 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    }
+}
 
 
 .grid100 {

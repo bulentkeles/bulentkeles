@@ -144,6 +144,7 @@ a:hover, a:active {
   margin:0;
 }
 
+
 /* Simple Responsive Framework. */
 .row {
   display: inline-block;
@@ -155,6 +156,7 @@ a:hover, a:active {
     width:100%;
   }
 }
+
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
@@ -199,6 +201,7 @@ a:hover, a:active {
     width: 100%;
   }
 }
+
 
 /********** Medium devices only **********/
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -286,8 +289,6 @@ a:hover, a:active {
     width: 100%;
   }
 }
-
-
 
 
 footer {

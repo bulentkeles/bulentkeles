@@ -85,7 +85,6 @@ p {
   font-size: 1em;
   line-height: 28px;
   display: block;
-  padding: 12px;
   margin: 0;
   text-align: left;
   transition: height ,5s;
@@ -290,6 +289,13 @@ a:hover, a:active {
   }
 }
 
+.thumbs {
+border-radius: 12px;
+}
+ @media (max-width: 767px){
+   .thumbs {
+  border-radius: 0px;}
+}
 
 footer {
   text-align: center;

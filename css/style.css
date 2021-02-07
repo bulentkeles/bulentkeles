@@ -45,7 +45,7 @@ body {
   }
 
   ::selection {
-    background-color: rgba(0,170,255,.96);
+    background-color: rgba(255,255,255,.12);
   }
 
 nav {
@@ -120,7 +120,7 @@ a {
 }
 
 a:hover, a:active {
-  color: rgba(0,170,255,.96);
+  color: rgba(255,255,255,.24);
 }
 
 
@@ -259,7 +259,7 @@ a:hover, a:active {
 }
 
 /********** Small devices only **********/
-@media (max-width: 767.99px) {
+@media (max-width: 767px) {
   .col-sm-1, .col--2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;
   }
@@ -309,7 +309,7 @@ animation: mymove 1s;
 border-radius: 20px;
 }
 
-@media (max-width: 767.99px) {
+@media (max-width: 767px) {
   .thumbs {
     border-radius: 0px;
   }
@@ -320,7 +320,6 @@ border-radius: 20px;
   0%   {top:60px; opacity:0%;}
   100% {top: 0px; opacity:100%;}
 }
-
 
 footer {
   text-align: center;

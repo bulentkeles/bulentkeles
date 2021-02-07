@@ -304,10 +304,16 @@ a:hover, a:active {
 
 
 .thumbs {
-position: relative;
-animation: mymove 1s;
+animation: myFadeIn 1s;
 border-radius: 20px;
+box-shadow: 0 4px 8px 0 rgba(255,255,255,.2);
+transition: 0.3s;
 }
+
+.thumbs:hover {
+   box-shadow: 0 8px 16px 0 rgba(255,255,255,.2);
+}
+
 
 @media (max-width: 767px) {
   .thumbs {
@@ -316,7 +322,7 @@ border-radius: 20px;
 }
 
 
-@keyframes mymove {
+@keyframes myFadeIn {
   0%   {top:60px; opacity:0%;}
   100% {top: 0px; opacity:100%;}
 }

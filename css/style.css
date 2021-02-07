@@ -35,7 +35,7 @@ body {
   background: #181818;
   color: #fff;
   font-family: 'Manrope', sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   text-align: center;
   line-height: 24px;
   -webkit-font-smoothing: antialiased;
@@ -86,7 +86,9 @@ p {
   line-height: 28px;
   display: block;
   margin: 0;
+  padding-top: 8px;
   text-align: left;
+  color: rgba(255, 255, 255, 0.2);
   transition: height ,5s;
   -webkit-transition: height ,5s;
   -moz-transition: height ,5s;

@@ -110,14 +110,17 @@ h1 {
   color: #fff;
   line-height: 64px;
   font-weight: 800;
-  padding-bottom: 48px;
   }
-  @media (max-width: 767px) {
-  h1 {
-      font-size: 48px;
-      line-height: 56px;
-       }
-    }
+@media (max-width: 767px) {
+h1 {
+    font-size: 48px;
+    line-height: 56px;
+     }
+  }
+
+h1.bigtitle {
+  padding-bottom: 120px;
+}
 
 h2 {
   font-size: 36px;
@@ -139,7 +142,6 @@ h3 {
   line-height: 32px;
   font-weight: 500;
   text-align: left;
-  padding-bottom: 24px;
   color: rgba(255, 255, 255, 0.24);
 }
 
@@ -148,28 +150,33 @@ h4 {
   line-height: 24px;
   font-weight: 500;
   text-align: left;
-  padding-bottom: 24px;
   color: rgba(255, 255, 255, 0.24);
 }
 
 
 h5 {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   font-weight: 500;
   text-align: left;
-  padding-bottom: 24px;
-  /* color: rgba(255, 255, 255, 0.48); */
   color: #a7c1c0;
 }
 
-h5.overline {
-    text-tran sform: uppercase;
+h5.tagline {
+    text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
-    padding: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 
+.overline {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: left;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 
 
 body {
@@ -194,6 +201,7 @@ p {
   line-height: 24px;
   display: block;
   margin: 0;
+  text-align: left;
   color: rgba(255, 255, 255, 0.24);
   transition: height ,5s;
   -webkit-transition: height ,5s;
@@ -212,6 +220,12 @@ a:hover, a:active {
 }
 
 
+li {
+  text-align: left;
+  list-style-position: inside;
+
+}
+
 .hero {
 padding-top: 120px;
 }
@@ -229,6 +243,40 @@ padding-top: 120px;
      }
   }
 
+
+hr {
+  border: 0.5px solid rgba(255, 255, 255, 0.24);
+  margin-top:56px;
+  margin-bottom:56px;
+}
+
+
+.mainContainer {
+  margin:0 auto;
+  max-width: 1200px;
+}
+
+
+.xpContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+
+.xpContainer > div {
+  width:50%;
+  padding: 24px;
+}
+
+
+
+
+.xpTitle {
+  padding-top: 56px;
+  padding-bottom: 56px;
+
+}
 
 .social {
   margin: auto;

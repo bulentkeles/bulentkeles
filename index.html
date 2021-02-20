@@ -7,8 +7,7 @@
   <link rel="alternate" type="application/rss+xml" href="http://bulentkeles.com/feed.xml" />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:weight@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/ysm4mgp.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43972553-1"></script>
@@ -25,7 +24,7 @@
 
 <header>
   <nav>
-    <ul class="topnav">
+    <ul class="topnav" id="top">
       <li class="topnav active"><a href="index.html">Works</a></li>
       <li><a href="case.html">About</a></li>
       <li><a href="resume.html">Resume</a></li>
@@ -144,28 +143,39 @@
   </div>
 
   <div>
-    <p class="jhancock">Designed & Developed by Bulent Keles</p>
+    <p class="jancock">Designed & Developed by Bulent Keles</p>
   </div>
 
   </footer>
 </section>
 
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
-<!-- Check out this new piece of jquery that you added from stackoverflow. Keep experimenting with this code to see if you can get it to work with your desired BG colors
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-<script type="text/javascript">
-  $(document).ready(function(){
-    $("div").hover(function(){
-        $(this).parent(this).css('background-color','red');
-    });
+      // Store hash
+      var hash = this.hash;
 
-    $("div").mouseleave(function(){
-        $(this).parent(this).css('background-color','white');
-    });
-});​
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
 </script>
 
- -->
 
 </body>
 </html>

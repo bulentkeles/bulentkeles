@@ -7,7 +7,7 @@
   <link rel="alternate" type="application/rss+xml" href="http://bulentkeles.com/feed.xml" />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:weight@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/ysm4mgp.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43972553-1"></script>
@@ -25,7 +25,7 @@
 <body>
 
 <nav>
-  <ul class="topnav">
+  <ul class="topnav" id="top">
     <li><a href="index.html">Works</a></li>
     <li><a href="about.html">About</a></li>
     <li class="topnav active"><a href="resume.html">Resume</a></li>
@@ -45,15 +45,23 @@
     </div>
   </section>
 
+<hr>
 
+<section class="xpContainer">
+    <div>
+      <h5 class="overline">2016</h5>
+      <h3>UX Design Immersive General Assembly, San Francisco</h3></br>
+      <p>Completed a three month intensive UX program which helped me understand the importance of users and rapidly testing new ideas in today’s fast moving workplace.</p>
+    </div>
 
-<section class="flex-container">
-  <div class="sectionTitle">
-      <hr>
-      <h1>Experience</h1>
-  </div>
+    <div>
+      <h5 class="overline">2004</h5>
+      <h3>Management Information Systems Boston University, Boston</h3></br>
+      <p>Concentrated in Information Systems, a program focused on understanding and using data systems to assists the decision making process in modern business environments.</p>
+    </div>
 </section>
 
+<hr>
 
 <section class="xpContainer">
     <div>
@@ -235,13 +243,38 @@
         </ul>
     </div>
   <div>
-      <p class="jhancock">Designed & Developed by Bulent Keles</p>
+      <p class="jancock">Designed & Developed by Bulent Keles</p>
   </div>
 
   </footer>
 </section>
 
-<script src="js/main.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 
 </body>
 </html>

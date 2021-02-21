@@ -260,7 +260,7 @@ li {
 
 
 .hero {
-margin: 0 auto;
+margin:0 auto;
 max-width: 1200px;
 padding-top: 72px;
 padding-bottom: 72px;
@@ -269,11 +269,15 @@ width: 100%;
 
 @media (max-width:767px) {
   .hero h1 {
+    margin:0 auto;
     font-size: 32px;
+    line-height: 40px;
+    width: 90%;
   }
 }
 
 .avatar {
+margin:0 auto;
   padding-bottom: 56px;
 }
 

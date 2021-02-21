@@ -192,13 +192,22 @@ h5.tagline {
     color:#00cfbd;
   }
 
-  .underline {
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      text-align: left;
-      padding-top: 8px;
-      color: rgba(167,193,192,.48);
-    }
+.lang > div {
+  text-align: center;
+}
+
+.lang .overline {
+padding-top: 16px;
+  text-align: center;
+}
+
+.underline {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: left;
+    padding-top: 8px;
+    color: rgba(167,193,192,.48);
+  }
 
 
 body {
@@ -264,17 +273,12 @@ width: 100%;
   }
 }
 
-
 .avatar {
-  width: 12%;
-  height: 12%;
   padding-bottom: 56px;
 }
 
 @media (max-width: 992px) {
   .avatar {
-  width: 16%;
-  height: 16%;
   padding-bottom: 36px;
      }
   }

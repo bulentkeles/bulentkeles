@@ -252,7 +252,7 @@ li {
 
 .hero {
 margin: 0 auto;
-max-width: 1440px;
+max-width: 1200px;
 padding-top: 72px;
 padding-bottom: 72px;
 width: 100%;
@@ -391,7 +391,9 @@ span.dot {
   padding: 0 0 72px 0;
 }
 
-
+.lang > div {
+  max-width: 32%;
+}
 
 .sectionTitle {
   width: 100%;

@@ -98,13 +98,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 margin: 32px 0px 72px 0px;
 }
 
+@media (max-width:400px) {
+  .topnav {
+    margin: 24px 0px 64px 0px;
+    font-size:10px;
+  }
+}
+
 .topnav li {
   display: inline;
   }
 
 .topnav a {
   display: inline-block;
-  padding: 12px 12px;
+  padding: 12px;
   -webkit-transition: color 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
   -moz-transition: color 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: color 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -277,7 +284,7 @@ width: 100%;
 }
 
 .avatar {
-margin:0 auto;
+  margin:0 auto;
   padding-bottom: 56px;
 }
 
@@ -289,8 +296,6 @@ margin:0 auto;
 
 @media (max-width: 767px) {
   .avatar {
-  width: 24%;
-  height: 24%;
   padding-bottom: 36px;
      }
   }
@@ -401,6 +406,13 @@ span.dot {
 
 .lang > div {
   max-width: 32%;
+}
+
+@media (max-width:767px) {
+  .lang > div {
+    max-width: 100%;
+  }
+
 }
 
 .sectionTitle {

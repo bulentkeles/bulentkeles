@@ -259,7 +259,8 @@ li {
 }
 
 .works {
-  margin: 0 80px;
+  margin-left:2%;
+  margin-right:2%;
 }
 
 @media (max-width:767px) {
@@ -569,8 +570,7 @@ margin-top: 72px;
   width: 100%;
   padding: 0px;
      }
-  }
-
+}
 
 .overlay {
   position: absolute;

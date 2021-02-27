@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin:0;
   padding:0;
-  user-drag: none; 
+  user-drag: none;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;
@@ -101,7 +101,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 
 .topnav {
-margin: 32px 0px 72px 0px;
+margin: 32px 0px 0px 0px;
 }
 
 @media (max-width:359px) {
@@ -186,15 +186,15 @@ h5 {
   line-height: 24px;
   font-weight: 500;
   text-align: left;
-  color: #a7c1c0;
 }
 
-h5.tagline {
+.tagline {
+    display: flex;
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
-    padding-top: 16px;
     padding-bottom: 16px;
+    justify-content: center;
   }
 
 .overline {
@@ -204,15 +204,6 @@ h5.tagline {
     padding-bottom: 8px;
     color:#00cfbd;
   }
-
-.lang > div {
-  text-align: center;
-}
-
-.lang .overline {
-padding-top: 16px;
-  text-align: center;
-}
 
 .underline {
     text-transform: uppercase;
@@ -268,16 +259,21 @@ li {
 }
 
 .works {
-  padding-top: 72px;
+  margin: 0 80px;
 }
 
+@media (max-width:767px) {
+  .works {
+    margin:0;
+  }
+}
 
 .hero {
 margin:0 auto;
 max-width: 1200px;
-padding-top: 72px;
-padding-bottom: 72px;
-width: 100%;
+margin-top: 120px;
+margin-bottom: 120px;
+width: 92%;
 }
 
 @media (max-width:767px) {
@@ -289,20 +285,30 @@ width: 100%;
   }
 }
 
+.resume {
+  margin-top: 96px;
+  margin-bottom: 96px;
+}
+
 .avatar {
   margin:0 auto;
-  padding-bottom: 56px;
+  background-size: 160px;
+  background-image: url("../img/avatar/avatar.circle@2x.png");
+  background-repeat: no-repeat;
+  width:160px;
+  height:160px;
+  margin-bottom:36px;
 }
 
 @media (max-width: 992px) {
   .avatar {
-  padding-bottom: 36px;
+  padding-bottom: 24px;
      }
   }
 
 @media (max-width: 767px) {
   .avatar {
-  padding-bottom: 36px;
+  padding-bottom: 24px;
      }
   }
 
@@ -311,37 +317,88 @@ hr {
   margin: 0 auto;
   margin-bottom:96px;
   border: 0.5px solid rgba(255, 255, 255, 0.24);
-  max-width: 1200px;
+  max-width: 1060px;
 }
 
 
-.cv-wrapper {
+.edu-wrapper {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 1060px;
+  padding:24px;
 }
 
 @media (max-width:767px) {
-  .cv-wrapper {
+  .edu-wrapper {
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     width: 100%;
   }
 }
 
-.cv-wrapper > div {
+.edu-wrapper > div {
   width:50%;
-  padding: 24px;
+  padding: 0 24px 24px 0px;
   padding-bottom: 72px;
 }
 @media (max-width:767px) {
-  .cv-wrapper > div {
+  .edu-wrapper > div {
     width:90%;
     padding-bottom: 48px;
   }
 }
+
+.lang-wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1060px;
+  padding:24px;
+  width:100%;
+}
+
+@media (max-width:767px) {
+  .lang-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.lang {
+  margin-bottom:72px;
+}
+
+
+.xp-wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1060px;
+  padding:24px;
+}
+
+@media (max-width:767px) {
+  .xp-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+.xp-wrapper > div {
+  width:50%;
+  padding: 0 24px 24px 0px;
+  padding-bottom: 72px;
+}
+@media (max-width:767px) {
+  .xp-wrapper > div {
+    width:90%;
+    padding-bottom: 48px;
+  }
+}
+
 
 .skillset {
   margin: 0 auto;
@@ -406,19 +463,52 @@ span.dot {
   }
 }
 
-.experience {
-  padding: 0 0 72px 0;
+.caption {
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(167, 193, 192, 0.48);
+  margin-bottom: 32px;
 }
 
-.lang > div {
-  max-width: 32%;
+
+.callout {
+  display: flex;
+  width:180px;
+  height:72px;
+  font-weight:500;
+  background-image: url("../img/resume/callout/callout.svg");
+  background-repeat: no-repeat;
+  padding:0px 32px;
+  margin-bottom:36px;
 }
 
-@media (max-width:767px) {
-  .lang > div {
-    max-width: 100%;
-  }
+.callout p {
+  font-size: 12px;
+  line-height: 16px;
+  color:#FDF5D1;
+  text-transform: uppercase;
+  text-align:center;
+  padding-top:16px;
+}
 
+.flag {
+  margin:0 auto;
+  width:120px;
+  height:120px;
+  background-size: 120px;
+  background-repeat: no-repeat;
+  margin-bottom:36px;
+}
+
+.flag.tr {
+    background-image: url("../img/resume/flags/tr.flag.svg");
+}
+.flag.uk {
+    background-image: url("../img/resume/flags/uk.flag.svg");
+}
+.flag.de {
+    background-image: url("../img/resume/flags/de.flag.svg");
 }
 
 .sectionTitle {
@@ -463,8 +553,8 @@ margin-top: 72px;
 
 .thumbs {
   position: relative;
-  width: 32%;
-  padding: 12px;
+  width: 33%;
+  padding:12px;
 }
 
 

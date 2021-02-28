@@ -258,6 +258,33 @@ li {
   list-style-position: inside;
 }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 240px;
+  background-color: #FDF5D1;
+  color: #022926;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: left;
+  border-radius: 12px;
+  padding: 12px;
+
+  /* Position the tooltip */
+position:absolute;
+  z-index: 1;
+  top:112%;
+  left:-24%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
 .works {
   margin-left:2%;
   margin-right:2%;

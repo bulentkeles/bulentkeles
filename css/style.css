@@ -264,6 +264,10 @@ li {
 }
 
 .tooltip .tooltiptext {
+  display:flex;
+  flex-position: center;
+  z-index: 1;
+  margin-top: 16px;
   visibility: hidden;
   width: 240px;
   background-color: #FDF5D1;
@@ -273,12 +277,6 @@ li {
   text-align: left;
   border-radius: 12px;
   padding: 12px;
-
-  /* Position the tooltip */
-position:absolute;
-  z-index: 1;
-  top:112%;
-  left:-24%;
 }
 
 .tooltip:hover .tooltiptext {
@@ -367,8 +365,6 @@ hr {
 
 .edu-wrapper > div {
   width:50%;
-  padding: 0 24px 24px 0px;
-  padding-bottom: 72px;
 }
 @media (max-width:767px) {
   .edu-wrapper > div {
@@ -417,12 +413,11 @@ hr {
 
 .xp-wrapper > div {
   width:50%;
-  padding: 0 24px 24px 0px;
   padding-bottom: 72px;
 }
 @media (max-width:767px) {
   .xp-wrapper > div {
-    width:90%;
+    width:100%;
     padding-bottom: 48px;
   }
 }
@@ -501,6 +496,7 @@ span.dot {
 
 
 .callout {
+  margin:0 auto;
   display: flex;
   width:180px;
   height:72px;

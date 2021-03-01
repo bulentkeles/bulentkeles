@@ -282,6 +282,9 @@ li {
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+  -webkit-animation: fadeIn 1200ms;
+  -moz-animation: fadeIn 1200ms;
+  animation: fadeIn 1200ms;
 }
 
 .works {

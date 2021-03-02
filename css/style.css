@@ -4,10 +4,10 @@
   padding:0;
   user-drag: none;
   user-select: none;
-  -moz-user-select: none;
+  /* -moz-user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
-  -ms-user-select: none;
+  -ms-user-select: none; */
 }
 
 
@@ -132,7 +132,6 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
-
 h1 {
   font-size: 56px;
   color: #fff;
@@ -146,9 +145,11 @@ h1 {
      }
   }
 
+
 h1.bigtitle {
   padding-bottom: 120px;
 }
+
 
 h2 {
   font-size: 36px;
@@ -172,6 +173,7 @@ h3 {
   color:#fff;
 }
 
+
 h4 {
   font-size: 18px;
   line-height: 24px;
@@ -188,6 +190,7 @@ h5 {
   text-align: left;
 }
 
+
 .tagline {
     display: flex;
     text-transform: uppercase;
@@ -197,6 +200,7 @@ h5 {
     justify-content: center;
   }
 
+
 .overline {
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -204,6 +208,7 @@ h5 {
     padding-bottom: 8px;
     color:#00cfbd;
   }
+
 
 .underline {
     text-transform: uppercase;
@@ -229,8 +234,10 @@ body {
   }
 
   ::selection {
-    background-color: rgba(255,255,255,.12);
+    /* background-color: rgba(255,255,255,.16); */
+    background-color: #00CFBD;
   }
+
 
 p {
   line-height: 24px;
@@ -248,8 +255,9 @@ a {
   text-decoration: none;
 }
 
+
 a:hover, a:active {
-  color: rgba(167,193,192,.72);
+  color: rgba(167,193,192,1);
 }
 
 
@@ -258,10 +266,12 @@ li {
   list-style-position: inside;
 }
 
+
 .tooltip {
   position: relative;
   display: inline-block;
 }
+
 
 .tooltip .tooltiptext {
   display:flex;
@@ -282,9 +292,9 @@ li {
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
-  -webkit-animation: fadeIn 1200ms;
-  -moz-animation: fadeIn 1200ms;
-  animation: fadeIn 1200ms;
+  -webkit-animation: fadeIn 800ms;
+  -moz-animation: fadeIn 800ms;
+  animation: fadeIn 800ms;
 }
 
 .works {
@@ -615,6 +625,7 @@ margin-top: 72px;
 
 .overlay {
   position: absolute;
+  overflow: hidden;
   top: 0;
   bottom: 0;
   left: 0;
@@ -622,13 +633,14 @@ margin-top: 72px;
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
+  transition: .3s ease;
   background-color: #042826;
 }
 
 .thumbs:hover .overlay {
-  opacity: .92;
+  opacity: .96;
 }
+
 
 .title {
   color: #fdf5d1;

@@ -233,6 +233,7 @@ body {
   animation: fadeIn 3000ms;
   }
 
+
   ::selection {
     /* background-color: rgba(255,255,255,.16); */
     background-color: #00CFBD;
@@ -625,26 +626,24 @@ margin-top: 72px;
 
 .overlay {
   position: absolute;
-  overflow: hidden;
-  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100%;
+  background-color: rgba(2, 41, 38, 1);
+  overflow: hidden;
   width: 100%;
-  opacity: 0;
-  transition: .3s ease;
-  background-color: #042826;
+  height: 0;
+  transition: .5s ease-in-out;
 }
 
 .thumbs:hover .overlay {
-  opacity: .96;
+  height: 100%;
 }
-
 
 .title {
   color: #fdf5d1;
   font-size: 24px;
+  line-height:32px;
   font-weight: 500;
   position: absolute;
   top: 50%;
@@ -654,6 +653,45 @@ margin-top: 72px;
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+
+.compWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin:48px;
+}
+
+
+.img-comp-container {
+  position: relative;
+  height: 450px; /*should be the same height as the images*/
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.img-comp-img img {
+  display: block;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 36px;
+  height: 36px;
+  background-color: #00CFBD;
+  border-radius: 50%;
+}
+
+
+
 
 
 footer {

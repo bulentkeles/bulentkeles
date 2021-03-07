@@ -227,6 +227,7 @@ body {
   line-height: 24px;
   font-weight: 500;
   text-align: center;
+  transition: background-color 1s ease;
   -webkit-font-smoothing: antialiased;
   -webkit-animation: fadeIn 3000ms;
   -moz-animation: fadeIn 3000ms;
@@ -329,6 +330,21 @@ width: 92%;
 .hero.resume {
   margin-top: 96px;
   margin-bottom: 96px;
+}
+
+.hero.about {
+  margin-top: 96px;
+  margin-bottom: 96px;
+}
+
+.about-wrapper {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  max-width: 1060px;
+  justify-content: space-between;
+  margin-bottom: 72px;
+  width:100%;
 }
 
 .avatar {
@@ -691,6 +707,39 @@ margin-top: 72px;
 }
 
 
+
+/* panel styles */
+.panel {
+  /* min height incase content is higher than window height */
+  min-height: 100vh;
+  /* display: flex;
+  justify-content: space-around;
+  align-items: center; */
+  /* outline: 10px solid hotpink; */
+}
+
+/* colours */
+.color-richblack {
+  background-color: #022926;
+}
+.color-skobeloff {
+  background-color: #05615A;
+}
+.color-turquoise {
+  background-color: #00CFBD;
+}
+.color-celeste {
+  background-color: #B1FBF5;
+}
+.color-mintcream {
+  background-color: #E5EEED;
+}
+.color-cultured {
+  background-color: #F4F8F7;
+}
+.color-cornsilk {
+  background-color: #FDF5D1;
+}
 
 
 

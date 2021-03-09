@@ -275,33 +275,18 @@ li {
   display: inline-block;
 }
 
-.tooltip h1{
-  color:#FEF4DD;
-}
-
 
 .tooltip .tooltiptext {
-  display:flex;
-  flex-position: center;
+  display:block;
+  margin: 0 auto;
+  /* display:flex;
+  flex-position: center; */
   z-index: 1;
-  margin-top: 16px;
-  visibility: hidden;
-  width: 240px;
-  background-color: #0D203F;
-  color: #00B0ED;
+  color: rgba(255,255,255,1);
   font-size: 12px;
-  line-height: 16px;
-  text-align: left;
-  border-radius: 12px;
-  padding: 12px;
-  border: 2px solid #00B0ED;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  -webkit-animation: fadeIn 800ms;
-  -moz-animation: fadeIn 800ms;
-  animation: fadeIn 800ms;
+  line-height: 20px;
+  text-align: center;
+  padding: 48px;
 }
 
 .works {
@@ -317,7 +302,7 @@ li {
 
 .hero {
 margin:0 auto;
-max-width: 1200px;
+max-width: 1232px;
 margin-top: 120px;
 margin-bottom: 120px;
 width: 92%;
@@ -346,7 +331,7 @@ width: 92%;
   display: flex;
   margin: 0 auto;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 1232px;
   justify-content: space-between;
   margin-bottom: 72px;
   width:100%;
@@ -382,7 +367,7 @@ hr {
   margin-top: 48px;
   margin-bottom: 48px;
   border: 0.5px solid rgba(255, 255, 255, 0.12);
-  max-width: 1200px;
+  max-width: 1232px;
 }
 
 
@@ -390,7 +375,7 @@ hr {
   display: flex;
   margin: 0 auto;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 1232px;
   justify-content: space-between;
   margin-bottom: 72px;
   width:100%;
@@ -428,7 +413,7 @@ hr {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1232px;
   width:100%;
 }
 
@@ -444,8 +429,7 @@ hr {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  max-width: 1200px;
-  padding:24px;
+  max-width: 1232px;
 }
 
 @media (max-width:767px) {
@@ -540,13 +524,11 @@ span.dot {
 
 .callout {
   margin:0 auto;
-  display: flex;
-  justify-content: center;
-  height:72px;
+  height:500px;
+  width:352px;
   font-weight:500;
-  background-image: url("../img/resume/callout/callout.outline.svg");
+  background-image: url("../img/resume/borders/gradient.svg");
   background-repeat: no-repeat;
-  padding-top:8px;
   margin-bottom:36px;
 }
 
@@ -554,10 +536,10 @@ span.dot {
 .callout p {
   font-size: 12px;
   line-height: 16px;
-  color:#00B0ED;
+  color:#fff;
   text-transform: uppercase;
   text-align:center;
-  padding-top:16px;
+  padding:48px 0px;
 }
 
 .flag {
@@ -566,7 +548,7 @@ span.dot {
   height:120px;
   background-size: 120px;
   background-repeat: no-repeat;
-  margin-bottom:36px;
+  margin-bottom:48px;
   border-radius: 50%;
 }
 
@@ -609,11 +591,11 @@ span.dot {
 }
 
 .social a:hover {
-  color: rgba(167,193,192,.48);
+  color: rgba(255,255,255,.48);
 }
 
 .jancock {
-  color: rgba(167,193,192,.48);
+  color: rgba(255,255,255,.48);
   text-align: center;
 }
 
@@ -643,13 +625,13 @@ margin-top: 72px;
 }
 
 .overlay {
+  overflow: hidden;
   position: absolute;
   top:0;
   left: 0;
   right: 0;
   height: 0;
   background-color: #0D203F;
-  overflow: hidden;
   width: 100%;
   transition: .5s ease-in-out;
 }

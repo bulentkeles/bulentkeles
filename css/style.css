@@ -270,25 +270,6 @@ li {
 }
 
 
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-
-.tooltip .tooltiptext {
-  display:block;
-  margin: 0 auto;
-  /* display:flex;
-  flex-position: center; */
-  z-index: 1;
-  color: rgba(255,255,255,1);
-  font-size: 12px;
-  line-height: 20px;
-  text-align: center;
-  padding: 48px;
-}
-
 .works {
   margin-left:2%;
   margin-right:2%;
@@ -302,7 +283,7 @@ li {
 
 .hero {
 margin:0 auto;
-max-width: 1232px;
+max-width: 1280px;
 margin-top: 120px;
 margin-bottom: 120px;
 width: 92%;
@@ -331,9 +312,10 @@ width: 92%;
   display: flex;
   margin: 0 auto;
   flex-wrap: wrap;
-  max-width: 1232px;
+  max-width: 1280px;
   justify-content: space-between;
   margin-bottom: 72px;
+  padding: 0px 24px;
   width:100%;
 }
 
@@ -362,20 +344,21 @@ width: 92%;
 
 
 hr {
-  display: block;
-  margin:0 auto;
-  margin-top: 48px;
-  margin-bottom: 48px;
+  margin: 0 auto;
+  margin-top:48px;
+  margin-bottom:48px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   border: 0.5px solid rgba(255, 255, 255, 0.12);
   max-width: 1232px;
 }
-
 
 .edu-wrap {
   display: flex;
   margin: 0 auto;
   flex-wrap: wrap;
-  max-width: 1232px;
+  max-width: 1280px;
   justify-content: space-between;
   margin-bottom: 72px;
   width:100%;
@@ -413,7 +396,7 @@ hr {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 1232px;
+  max-width: 1280px;
   width:100%;
 }
 
@@ -429,7 +412,8 @@ hr {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  max-width: 1232px;
+  max-width: 1280px;
+  padding:24px;
 }
 
 @media (max-width:767px) {
@@ -537,9 +521,8 @@ span.dot {
   font-size: 12px;
   line-height: 16px;
   color:#fff;
-  text-transform: uppercase;
   text-align:center;
-  padding:48px 0px;
+  padding:48px 24px;
 }
 
 .flag {

@@ -505,22 +505,14 @@ span.dot {
 }
 
 .passport {
-  margin:24px;
-  padding: 4px;
-  background: linear-gradient(to right, #00B0ED, #00CFBD);
+  margin:20px;
+  background: rgba(255,255,255,.04);
+  border-radius: 12px;
 }
 
-@media (max-width: 992px) {
-  .passport {
-    max-width: 280px;
-    margin:16px;
-     }
-  }
-
-@media (max-width: 767px) {
-  .passport {
-    max-width: 352px;
-  }
+.passport .overline {
+  text-align: center;
+  padding: 48px 0px;
 }
 
 .passport p {
@@ -528,12 +520,7 @@ span.dot {
   line-height: 16px;
   color:#fff;
   text-align:center;
-  padding:48px 24px;
-}
-
-
-.pass-container {
-  background: #0D203F;
+  padding:48px 48px;
 }
 
 

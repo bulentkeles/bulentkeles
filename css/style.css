@@ -394,8 +394,7 @@ hr {
   margin-top:120px;
   margin-bottom:120px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-wrap: row;
   max-width: 1280px;
   width:100%;
 }
@@ -506,10 +505,7 @@ span.dot {
 }
 
 .passport {
-  display: flex;
-  justify-content: center;
-  margin:12px;
-  max-width: 352px;
+  margin:24px;
   padding: 4px;
   background: linear-gradient(to right, #00B0ED, #00CFBD);
 }

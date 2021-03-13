@@ -774,7 +774,7 @@ margin-top: 72px;
 .tabgallery {
   display: flex;
   margin:0 auto;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   max-width:960px;
   margin-bottom: 120px;
@@ -790,6 +790,7 @@ margin-top: 72px;
 .column img {
   opacity: 0.8; 
   cursor: pointer;
+  width: 100%;
 }
 
 .column img:hover {
@@ -816,9 +817,11 @@ margin-top: 72px;
   position: relative;
   bottom: -48px;
   color: white;
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: 600;
   text-align: center;
 }
+
 
 /* Closable button inside the image */
 .closebtn {
@@ -829,7 +832,6 @@ margin-top: 72px;
   font-size: 35px;
   cursor: pointer;
 }
-
 
 
 /* Footer */

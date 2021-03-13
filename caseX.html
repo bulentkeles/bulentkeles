@@ -21,13 +21,15 @@
 <script type="text/javascript" src="js/comp.js"></script>
 <script type="text/javascript" src="js/smooth.js"></script>
 <script type="text/javascript" src="js/overlay.js"></script>
+<script type="text/javascript" src="js/tabgallery.js"></script>
+<script type="text/javascript" src="js/scroll.js"></script>
 
 </head>
 <body>
 
 
 <!-- The overlay -->
-<header class="topnav">
+<header class="topnav" id="top">
   <div id="myNav" class="overlay">
   
     <!-- Button to close the overlay navigation -->
@@ -65,7 +67,6 @@
         <p>Fallen for scams, fooled by friends, bedazzeled by beauty</p></br>
         <p>I'm really looking forward to see what happens when technology lifts the barrier of language. Making language learning obsolete and lifting all barriers to understand what other communities around the world hold dear, expect from the future, what thir struggles are. A long awaited dream come true? Will the dream of <a href="https://en.wikipedia.org/wiki/L._L._Zamenhof">Dr. Zamenhof</a> come true? Is <a href="https://en.wikipedia.org/wiki/Esperanto">Esperanto</a> becoming a reality? Really psyched to see what's next. .</p></br>
       </div>
-
   </section>
 
 
@@ -73,15 +74,48 @@
   <div class="comp-wrap">
     <div class="img-comp-container">
       <div class="img-comp-img">
-        <img src="img/work/appIconUI@2x.jpg" width="600" height="450">
+        <img src="img/work/appIconUI@2x.jpg" width="600px" height="450px">
       </div>
       <div class="img-comp-img img-comp-overlay">
-        <img src="img/work/appIconWF@2x.jpg" width="600" height="450">
+        <img src="img/work/appIconWF@2x.jpg" width="600px" height="450px">
       </div>
       </div>
   </div>
 </section>
 
+<hr>
+
+
+<!-- An Image grid with four columns -->
+
+<section class="tabgallery">
+<div class="row">
+  <div class="column">
+    <img src="img/work/hublot.jpg" height="160px" alt="Nature" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/work/nike.png" height="160px" alt="Snow" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/work/numbers.jpg" height="160px" alt="Mountains" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/work/officeees.desk.png" height="160px" alt="Lights" onclick="myFunction(this);">
+  </div>
+</div>
+
+<!-- The expanding image container -->
+<div class="img-tab-container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn"><img src="img/icons/close.svg" alt=""></span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:100%">
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div>
+</section>
 
 <div>
     <a href="#top" alt="back to top"><img src="img/icons/arrow-up.svg"></a>

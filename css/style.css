@@ -612,7 +612,7 @@ margin-top: 72px;
      }
 }
 
-.overlay {
+.thumbs-overlay {
   overflow: hidden;
   position: absolute;
   top:0;
@@ -625,7 +625,7 @@ margin-top: 72px;
 }
 
 
-.thumbs:hover .overlay {
+.thumbs:hover .thumbs-overlay {
   height: 100%;
 }
 
@@ -646,29 +646,32 @@ margin-top: 72px;
 }
 
 
-.comp-wrap {
-margin:48px;
-}
-
+  .comp-wrap {
+  margin:0 auto;
+  }
 
 .img-comp-container {
   position: relative;
   height: 450px;
-  width:100%;
+  top:50%;
+  left:50%;
+}
+
+.img-comp-overlay {
+  display: block;
 }
 
 .img-comp-img {
-  margin:0 auto;
-  display: block;
-  position:absolute;
+  position: absolute;
+  height: auto;
+  width:auto;
   overflow: hidden;
 }
 
 
 .img-comp-img img {
-  margin:0 auto;
   display: block;
-  position: relative;
+  vertical-align: middle;
 }
 
 .img-comp-slider {
@@ -707,6 +710,67 @@ margin:48px;
 }
 
 
+/* Overlay menu */
+
+.overlay {
+  height: 0%; 
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:#0D203F;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  margin-top:8%;
+  display: flex;
+  flex-flow:column;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 72px;
+  text-align: center;
+}
+
+.overlay a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.36);
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #fff;
+}
+
+.overlay .closebtn {
+  display: flex;
+  justify-content: center;
+  margin-top:24px;
+  
+}
+
+@media (max-width: 767px) {
+  .overlay {overflow-y: auto;
+  }
+  
+  .overlay-content {
+    margin-top:24%;
+  }
+
+  .overlay a {
+    font-size: 36px; 
+    line-height:36px;
+  }
+  .overlay .closebtn {
+  margin-top:16px;
+  }
+}
+
+/* Footer */
 footer {
   text-align: center;
   display: inline-block;

@@ -20,11 +20,36 @@
 </script>
 <script type="text/javascript" src="js/smooth.js"></script>
 <script type="text/javascript" src="js/scroll.js"></script>
+<script type="text/javascript" src="js/overlay.js"></script>
 </head>
 
 <body>
 
-<header>
+
+<!-- New Menu -->
+<!-- The overlay -->
+<header class="topnav">
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="img/icons/close.svg" alt=""></a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="index.html">Works</a>
+    <a href="about.html">About</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+<span class="topnav" onclick="openNav()"><img src="img/icons/hamburger.svg" alt="Menu Icon"></span>
+</header>
+
+
+<!-- <header>
   <nav class="topnav">
     <ul id="top">
       <li class="topnav active"><a href="index.html">Works</a></li>
@@ -33,7 +58,7 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
-</header>
+</header> -->
 
 
 <section>
@@ -55,7 +80,7 @@
       <div class="thumbs">
         <a href="caseX.html">
         <img src="img/work/numbers.jpg" width="100%" height="100%" alt="Case Study 01" />
-          <div class="overlay">
+          <div class="thumbs-overlay">
           <div class="title">Playground: Numbers</div>
         </div></a>
       </div>
@@ -64,7 +89,7 @@
       <div class="thumbs">
         <a href="caseX.html">
           <img src="img/work/hublot.jpg" width="100%" height="100%" alt="Case Study 02" />
-          <div class="overlay">
+          <div class="thumbs-overlay">
           <div class="title">Hublot Concept Design</div>
         </div></a>
       </div>
@@ -74,7 +99,7 @@
     <div class="thumbs">
         <a href="caseX.html">
           <img src="img/work/bayrak.png" width="100%" height="100%"alt="Case Study 03" />
-          <div class="overlay">
+          <div class="thumbs-overlay">
           <div class="title">Finance App</div>
         </div></a>
     </div>
@@ -83,7 +108,7 @@
     <div class="thumbs">
         <a href="caseX.html">
           <img src="img/work/helmets.jpg" width="100%" height="100%" alt="Case Study 04" />
-          <div class="overlay">
+          <div class="thumbs-overlay">
           <div class="title">Work or Case Study Title</div>
         </div></a>
     </div>
@@ -92,7 +117,7 @@
     <div class="thumbs">
         <a href="caseX.html">
           <img src="img/work/finance.app.jpg" width="100%" height="100%" alt="Case Study 05" />
-          <div class="overlay">
+          <div class="thumbs-overlay">
           <div class="title">Work or Case Study Title</div>
         </div></a>
     </div>
@@ -101,7 +126,7 @@
     <div class="thumbs">
         <a href="caseX.html">
           <img src="img/work/nike.png" width="100%" height="100%" alt="Case Study 06" />
-          <div class="overlay">
+          <div class="thumbs-overlay">
           <div class="title">Work or Case Study Title</div>
         </div></a>
     </div>
@@ -110,7 +135,7 @@
     <div class="thumbs">
         <a href="caseX.html">
             <img src="img/work/officeees.desk.png" width="100%" height="100%" alt="Case Study 07" />
-          <div class="overlay">
+            <div class="thumbs-overlay">
           <div class="title">Work or Case Study Title</div>
         </div></a>
     </div>
@@ -118,17 +143,19 @@
     <div class="thumbs">
         <a href="caseX.html">
           <img src="img/work/bmw5.jpg" width="100%" height="100%" alt="Case Study 08" />
-          <div class="overlay">
+          <div class="thumbs-overlay">
           <div class="title">Work or Case Study Title</div>
         </div></a>
     </div>
     <div class="thumbs">
         <a href="caseX.html">
             <img src="img/work/icon.logo.m.png" width="100%" height="100%" alt="Case Study 09" />
-          <div class="overlay">
+            <div class="thumbs-overlay">
           <div class="title">Work or Case Study Title</div>
         </div></a>
     </div>
+    
+  
 </section>
 
 

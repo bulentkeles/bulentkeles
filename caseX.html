@@ -20,18 +20,30 @@
 </script>
 <script type="text/javascript" src="js/comp.js"></script>
 <script type="text/javascript" src="js/smooth.js"></script>
+<script type="text/javascript" src="js/overlay.js"></script>
 
 </head>
 <body>
 
-  <nav>
-    <ul class="topnav" id="top">
-      <li><a href="index.html">Works</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+<!-- New Menu -->
+<!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+<span onclick="openNav()">Menu</span>
 
 
   <section>
@@ -63,7 +75,7 @@
       <div class="img-comp-img img-comp-overlay">
         <img src="img/work/appIconWF@2x.jpg" width="600" height="450">
       </div>
-    </div>
+      </div>
   </div>
 </section>
 
@@ -92,12 +104,9 @@
   </footer>
 </section>
 
-
 <script>
 initComparisons();
 </script>
-
-
 
 </body>
 </html>

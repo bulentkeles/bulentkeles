@@ -351,7 +351,7 @@ hr {
   flex-wrap: wrap;
   justify-content: center;
   border: 0.5px solid rgba(255, 255, 255, 0.12);
-  max-width: 1232px;
+  max-width: 1240px;
 }
 
 .edu-wrap {
@@ -368,7 +368,6 @@ hr {
   width:50%;
   padding:24px;
 }
-
 
 @media (max-width:767px) {
   .edu-wrap {
@@ -441,6 +440,7 @@ hr {
   line-height:104px;
   font-weight: 700;
   padding: 48px;
+  max-width: 1280px;
   color:#FEF4DD;
   text-align: center;
   -webkit-hyphens: auto;
@@ -646,45 +646,6 @@ margin-top: 72px;
 }
 
 
-  .comp-wrap {
-  margin:0 auto;
-  }
-
-.img-comp-container {
-  position: relative;
-  height: 450px;
-  top:50%;
-  left:50%;
-}
-
-.img-comp-overlay {
-  display: block;
-}
-
-.img-comp-img {
-  position: absolute;
-  height: auto;
-  width:auto;
-  overflow: hidden;
-}
-
-
-.img-comp-img img {
-  display: block;
-  vertical-align: middle;
-}
-
-.img-comp-slider {
-  position: absolute;
-  z-index: 10;
-  cursor: ew-resize;
-  width: 36px;
-  height: 36px;
-  background-color: #00B0ED;
-  border-radius: 50%;
-}
-
-
 /* panel styles */
 .panel {
   /* min height incase content is higher than window height */
@@ -710,6 +671,59 @@ margin-top: 72px;
 }
 
 
+
+
+
+
+
+/* Image comparison Slider*/
+
+.comp-wrap { 
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  justify-content: center;
+  flex-direction: row;
+  max-width:1280px;
+  margin-bottom: 120px;
+  padding: 0px 20px;
+  width:100%;
+}
+
+.img-comp-container {
+  position: relative;
+  height: 450px;
+}
+
+.img-comp-overlay {
+  position: absolute;
+}
+
+.img-comp-img {
+  position: relative;
+  height: auto;
+  width:auto;
+  overflow: hidden;
+}
+
+
+.img-comp-img img {
+  display: block;
+  vertical-align: middle;
+}
+
+.img-comp-slider {
+  position: relative;
+  z-index: 10;
+  cursor: ew-resize;
+  width: 36px;
+  height: 36px;
+  background-color: #00B0ED;
+  border-radius: 50%;
+}
+
+
+
 /* Overlay menu */
 
 .overlay { 
@@ -720,50 +734,57 @@ margin-top: 72px;
   top: 0;
   left: 0;
   background-color:#0D203F;
-  overflow-y: hidden;
+  overflow: hidden;
   transition: 0.5s;
 }
 
 .overlay-content {
-  position: relative;
-  top: 12%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
   font-weight: 700;
   font-size: 72px;
-  line-height: 72px;
-  text-align: center;
-  
+  line-height: 88px;
+  margin-top:12%;
 }
 
 .overlay a {
-  padding:8px;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.36);
+  color: rgba(255, 255, 255, 0.20);
   display: block;
   transition: 0.3s;
 }
 
 .overlay a:hover, .overlay a:focus {
+  line-height: 88px;
   color: #fff;
+  background: #00B0ED;
 }
 
 .overlay .closebtn {
+  margin:0 auto;
   display: flex;
   justify-content: center;
-  margin-top:24px;
+  align-items: center;
 }
 
-@media (screen) and (max-height: 450px) {
-  .overlay {overflow-y: auto;}
+@media (max-width: 767px) {
+  .overlay {
+    overflow: hidden;
+  }
+  
   .overlay a {
-    font-size: 20px
+    font-size: 48px;
+    line-height:48px;
   }
   
   .overlay .closebtn {
-  margin:0 auto;
-  font-size: 36px;
-  line-height:36px;
-  top: 16px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 16px;
   }
 }
 
@@ -773,17 +794,17 @@ margin-top: 72px;
 /* The Image grid: Four equal columns that floats next to each other */
 .tabgallery {
   display: flex;
-  margin:0 auto;
+  margin: auto;
   justify-content: space-between;
   flex-direction: column;
-  max-width:960px;
+  max-width:1280px;
   margin-bottom: 120px;
 }
 
 .column {
   float: left;
   width: 25%;
-  padding: 12px;
+  padding: 20px
 }
 
 /* Style the images inside the grid */
@@ -808,8 +829,7 @@ margin-top: 72px;
 .img-tab-container {
   position: relative;
   display: none;
-  max-width: 1280px;
-  padding:12px;
+  margin:20px;
 }
 
 /* Expanding image text */
@@ -826,10 +846,9 @@ margin-top: 72px;
 /* Closable button inside the image */
 .closebtn {
   position: absolute;
-  top: 24px;
-  right: 24px;
+  top: 20px;
+  right: 20px;
   color: white;
-  font-size: 35px;
   cursor: pointer;
 }
 

@@ -94,38 +94,74 @@ font-family: termina, sans-serif;
 font-weight: 900;
 font-style: normal; */
 
-
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
 
-.topnav {
-margin: 32px 0px 0px 0px;
+/* Overlay menu */
+header {
+    cursor: pointer;
 }
 
-@media (max-width:359px) {
-  .topnav {
-    margin: 24px 0px 64px 0px;
-    font-size:10px;
+.overlay { 
+   /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  background-color:#0D203F;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.menu-icon {
+  margin-top: 40px;
+}
+
+.menu-icon > a {
+  margin:0;
+}
+
+.overlay-content {
+  position: relative;
+  top: 12%;
+  width: 100%;
+  text-align: center;
+}
+
+.overlay a {
+  display: block;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.20);
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 144px;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #FFF;
+}
+
+@media (max-width: 767px) {
+  .overlay {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  
+  .overlay-content {
+    top:16%;
+  }
+
+  .overlay a {
+    font-size: 48px;
+    line-height: 48px;
+    padding:12px 0px;
   }
 }
 
-.topnav li {
-  display: inline;
-  }
-
-.topnav a {
-  display: inline-block;
-  padding: 12px;
-  -webkit-transition: color 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  -moz-transition: color 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  transition: color 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.topnav.active a {
-  color:#fff;
-}
 
 
 h1, h2, h3, h4, h5, h6 {
@@ -192,12 +228,9 @@ h5 {
 
 
 .tagline {
-    display: flex;
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-align: center;
-    padding-bottom: 16px;
-    justify-content: center;
+    text-align: left;
     color:#00B0ED;
   }
 
@@ -205,8 +238,8 @@ h5 {
 .overline {
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-align: left;
-    padding-bottom: 8px;
+    text-align: center;
+    margin-bottom:16px;
     color:#00B0ED;
   }
 
@@ -293,8 +326,8 @@ width: 92%;
   .hero h1 {
     margin:0 auto;
     font-size: 32px;
-    line-height: 40px;
-    width: 90%;
+    line-height: 36px;
+    width: 96%;
   }
 }
 
@@ -724,69 +757,6 @@ margin-top: 72px;
 
 
 
-/* Overlay menu */
-
-.overlay { 
-  height: 0%;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color:#0D203F;
-  overflow: hidden;
-  transition: 0.5s;
-}
-
-.overlay-content {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  font-weight: 700;
-  font-size: 72px;
-  line-height: 88px;
-  margin-top:12%;
-}
-
-.overlay a {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.20);
-  display: block;
-  transition: 0.3s;
-}
-
-.overlay a:hover, .overlay a:focus {
-  line-height: 88px;
-  color: #fff;
-  background: #00B0ED;
-}
-
-.overlay .closebtn {
-  margin:0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@media (max-width: 767px) {
-  .overlay {
-    overflow: hidden;
-  }
-  
-  .overlay a {
-    font-size: 48px;
-    line-height:48px;
-  }
-  
-  .overlay .closebtn {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 16px;
-  }
-}
 
 
 

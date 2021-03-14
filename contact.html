@@ -27,27 +27,25 @@
 
 
 
-
-<!-- The overlay -->
-<header class="topnav" id="top">
-  <div id="myNav" class="overlay">
-  
-    <!-- Button to close the overlay navigation -->
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="img/icons/close.svg" alt=""></a>
-  
-    <!-- Overlay content -->
-    <div class="overlay-content">
-      <a href="index.html">Works</a>
-      <a href="about.html">About</a>
-      <a href="resume.html">Resume</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  
+  <header id="top">
+    <div id="myNav" class="overlay">
+      <!-- Button to close the overlay navigation -->
+      <div class="menu-icon">
+      <a href="javascript:void(0)" onclick="closeNav()"><img src="img/icons/close.svg" alt="Close Menu"></a>
+      </div>
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <a href="index.html">Works</a>
+        <a href="about.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>  
+    <!-- Use any element to open/show the overlay navigation menu -->
+    <div class="menu-icon">
+    <span onclick="openNav()"><img src="img/icons/hamburger.svg" alt="Open Menu"></span>
   </div>
-  
-  <!-- Use any element to open/show the overlay navigation menu -->
-  <span class="topnav" onclick="openNav()"><img src="img/icons/hamburger.svg" alt="Menu Icon"></span>
-  </header>
+</header>
   
 
 <!-- <nav>

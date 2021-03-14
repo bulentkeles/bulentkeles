@@ -23,29 +23,33 @@
 <script type="text/javascript" src="js/overlay.js"></script>
 </head>
 
-
-
 <body>
-  
-  <header id="top">
-    <div id="myNav" class="overlay">
-      <!-- Button to close the overlay navigation -->
-      <div class="menu-icon">
-      <a href="javascript:void(0)" onclick="closeNav()"><img src="img/icons/close.svg" alt="Close Menu"></a>
-      </div>
-      <!-- Overlay content -->
-      <div class="overlay-content">
-        <a href="index.html">Works</a>
-        <a href="about.html">About</a>
-        <a href="resume.html">Resume</a>
-        <a href="contact.html">Contact</a>
-      </div>
-    </div>  
-    <!-- Use any element to open/show the overlay navigation menu -->
-    <div class="menu-icon">
-    <span onclick="openNav()"><img src="img/icons/hamburger.svg" alt="Open Menu"></span>
-  </div>
-</header>
+  <ul class="segmented-control">
+      <li class="segmented-control_item">
+          <a href="index.html">
+          <input class="segmented-control_input" type="radio" value="1" name="option" id="option-1" checked>
+          <label class="segmented-control_label" for="option-1">Works</label>
+          </a>
+      </li>
+      <li class="segmented-control_item">
+        <a href="about.html">
+          <input class="segmented-control_input" type="radio" value="2" name="option" id="option-2" >
+          <label class="segmented-control_label" for="option-2">About</label>
+          </a>
+      </li>
+      <li class="segmented-control_item">
+          <a href="resume.html">
+          <input class="segmented-control_input" type="radio" value="3" name="option" id="option-3" >
+          <label class="segmented-control_label" for="option-3">Resume</label>
+          </a>
+      </li>
+      <li class="segmented-control_item">
+          <a href="contact.html">
+          <input class="segmented-control_input" type="radio" value="4" name="option" id="option-4" >
+          <label class="segmented-control_label" for="option-4">Contact</label>
+          </a>
+      </li>
+  </ul>
 
   <!-- <header>
   <nav class="topnav">
@@ -149,8 +153,8 @@
           <div class="title">Work or Case Study Title</div>
         </div></a>
     </div>
-    
-  
+
+
 </section>
 
 

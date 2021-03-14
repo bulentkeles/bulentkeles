@@ -40,13 +40,13 @@
         <a href="resume.html">Resume</a>
         <a href="contact.html">Contact</a>
       </div>
-    </div>  
+    </div>
     <!-- Use any element to open/show the overlay navigation menu -->
     <div class="menu-icon">
     <span onclick="openNav()"><img src="img/icons/hamburger.svg" alt="Open Menu"></span>
   </div>
 </header>
-  
+
 
 <!-- <nav>
   <ul class="topnav" id="top">
@@ -64,15 +64,15 @@
     <div>
     </div>
     <div>
-      <h1>Contact</h1>
-      <h5 class="tagline">What's on your mind?</h5>
+      <h5 class="overline">What's on your mind?</h5>
+      <h1>Send a Message</h1>
     </div>
   </div>
 </section>
 
 <hr>
 
-<section class="abt-wrap">
+<section class="contact-wrap">
 
   <div>
     <h3>The Commmunicator</h3></br>
@@ -80,13 +80,28 @@
     <p>I'm really looking forward to see what happens when technology lifts the barrier of language. Making language learning obsolete and lifting all barriers to understand what other communities around the world hold dear, expect from the future, what thir struggles are. A long awaited dream come true? Will the dream of <a href="https://en.wikipedia.org/wiki/L._L._Zamenhof">Dr. Zamenhof</a> come true? Is <a href="https://en.wikipedia.org/wiki/Esperanto">Esperanto</a> becoming a reality? Really psyched to see what's next. .</p></br>
   </div>
 
-  <div>
-    <h3>The Commmunicator</h3></br>
-    <p>Fallen for scams, fooled by friends, bedazzeled by beauty</p></br>
-    <p>I'm really looking forward to see what happens when technology lifts the barrier of language. Making language learning obsolete and lifting all barriers to understand what other communities around the world hold dear, expect from the future, what thir struggles are. A long awaited dream come true? Will the dream of <a href="https://en.wikipedia.org/wiki/L._L._Zamenhof">Dr. Zamenhof</a> come true? Is <a href="https://en.wikipedia.org/wiki/Esperanto">Esperanto</a> becoming a reality? Really psyched to see what's next. .</p></br>
+  <div class="container">
+    <form action="action_page.php">
+
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name...">
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+
+      <label for="fname">E-mail Address</label>
+      <input type="text" id="email" name="email" placeholder="Your e-mail address...">
+
+      <label for="subject">Comment</label>
+      <textarea id="subject" name="subject" placeholder="What's on your mind..." style="height:200px"></textarea>
+
+      <input type="submit" value="Submit">
+
+    </form>
   </div>
 
 </section>
+
 
 <div>
     <a href="#top" alt="back to top"><img src="img/icons/arrow-up.svg"></a>

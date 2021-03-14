@@ -104,8 +104,8 @@ header {
     cursor: pointer;
 }
 
-.overlay { 
-   /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+.overlay {
+   /* Height & width depends on how you want to reveal the overlay (see JS below) */
   height: 0%;
   width: 100%;
   position: fixed;
@@ -150,7 +150,7 @@ header {
     overflow-y: hidden;
     overflow-x: hidden;
   }
-  
+
   .overlay-content {
     top:16%;
   }
@@ -386,6 +386,43 @@ hr {
   border: 0.5px solid rgba(255, 255, 255, 0.12);
   max-width: 1240px;
 }
+
+
+.contact-wrap {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  max-width: 1280px;
+  justify-content: space-between;
+  margin-bottom: 72px;
+  width:100%;
+}
+
+.contact-wrap > div {
+  width:50%;
+  padding:24px;
+}
+
+@media (max-width:767px) {
+  .contact-wrap {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+.contact-wrap > div {
+  width:50%;
+}
+
+@media (max-width:767px) {
+  .contact-wrap > div {
+    width:100%;
+    padding-bottom: 48px;
+  }
+}
+
+
 
 .edu-wrap {
   display: flex;
@@ -711,7 +748,7 @@ margin-top: 72px;
 
 /* Image comparison Slider*/
 
-.comp-wrap { 
+.comp-wrap {
   display: flex;
   position: relative;
   margin: 0 auto;
@@ -779,7 +816,7 @@ margin-top: 72px;
 
 /* Style the images inside the grid */
 .column img {
-  opacity: 0.8; 
+  opacity: 0.8;
   cursor: pointer;
   width: 100%;
 }
@@ -821,6 +858,91 @@ margin-top: 72px;
   color: white;
   cursor: pointer;
 }
+
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  height:56px;
+  padding: 12px; /* Some padding */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: rgba(0, 176, 237, 1);
+  color: #0D203F;
+  padding: 12px 40px;
+  border: none;
+  cursor: pointer;
+  height:56px;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: rgba(0, 176, 237, .80);
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  margin: 0 auto;
+  border-radius: 12px;
+  padding: 20px;
+  max-width:640px;
+  margin-bottom: 120px;
+}
+
+
+/* Segmented Control  */
+.segmented-control {
+    margin-top:48px;
+    display: table;
+    width: 100%;
+    margin:0 auto;
+    padding: 0;
+    max-width: 400px;
+    width: 400px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 12px;
+}
+
+.segmented-control_item {
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.segmented-control_input {
+    position: absolute;
+    visibility: hidden;
+}
+
+.segmented-control_label {
+    display: block;
+    margin: 0 -1px -1px 0; /* -1px margin removes double-thickness borders between items */
+    padding: 1em .25em;
+
+    font: 14px/1.5 sans-serif;
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.segmented-control_label:hover {
+    background: #fafafa;
+}
+
+.segmented-control_input:checked + .segmented-control_label {
+    background: #eee;
+    color: #333;
+}
+
 
 
 /* Footer */

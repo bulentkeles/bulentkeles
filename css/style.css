@@ -11,6 +11,27 @@
 }
 
 
+
+
+
+/* colors */
+
+.color-oxford {
+  background-color: #0D203F;
+}
+.color-process {
+  background-color: #00B0ED;
+}
+.color-papaya {
+  background-color: #FEF4DD;
+}
+.color-cultured {
+  background-color: #F9F9FB;
+}
+
+
+
+
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0; }
@@ -884,19 +905,29 @@ input[type=submit]:hover {
 }
 
 
-
-header {
-  margin:24px 0px;
+.topnav {
+  margin-top: 48px;
+  top: 0px; /* Stay on top */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  z-index: 100;
 }
+@media (max-width:767px) {
+  .topnav {
+    margin-top: 24px;
+  }
+
+}
+
 /* Style the links inside the pill navigation menu */
 .pill-nav a {
-  margin:48px 0px;
+  margin:24px 0px;
   display: inline-block;
   color: rgba(255, 255, 255, .24);
   font-size: 10px;
   text-align: center;
   font-weight: 700;
-  padding: 12px 24px ;
+  padding: 8px 24px ;
   text-transform: uppercase;
   letter-spacing: 2px;
   text-decoration: none;
@@ -912,15 +943,74 @@ header {
 /* Change the color of links on mouse-over */
 .pill-nav a:hover {
   color: white;
+  background-color: rgba(255, 255, 255, 0.04);
 }
 
 /* Add a color to the active/current link */
 .pill-nav a.active {
-  background-color: #00B0ED;
   color: white;
 }
 
 
+/* FAQ */
+.faq {
+  margin: 120px 0px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: rgba(255, 255, 255, 0.04);
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  color: #fff;
+  cursor: pointer;
+  padding: 24px;
+  width: 100%;
+  font-size: 14px;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  max-width:1240px;
+}
+
+button.accordion {
+  font-family: 'termina', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+@media (max-width:767px) {
+  button.accordion {
+    font-size: 12px;
+  }
+}
+.accordion:after {
+  content: '\002B';
+  repeat: none;
+  float: right;
+}
+
+.accordion.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.12);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  max-width:1240px;
+}
+
+.panel p {
+  padding: 24px;
+}
 
 
 

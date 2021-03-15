@@ -11,6 +11,8 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43972553-1"></script>
+<script type="text/javascript" src="js/smooth.js"></script>
+<script type="text/javascript" src="js/scroll.js"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -18,35 +20,20 @@
 
   gtag('config', 'UA-43972553-1');
 </script>
-<script type="text/javascript" src="js/smooth.js"></script>
-<script type="text/javascript" src="js/scroll.js"></script>
-<script type="text/javascript" src="js/topnav.js"></script>
-<script type="text/javascript" src="js/function.js"></script>
+
 
 </head>
 <body>
 
-  <div id="container">
-  	<ul>
-  		<li>About</li>
-  		<li>Contact</li>
-  		<li>Pricing</li>
-  		<div class="focus first"></div>
-  		<div class="focus second"></div>
 
-  	</ul>
-  </div>
-
-
-
-<!-- <header>
+<header class="topnav">
   <div class="pill-nav" id="top">
-    <a href="index.html">Home</a>
+    <a href="index.html">Works</a>
     <a class="active" href="about.html">About</a>
     <a href="resume.html">Resume</a>
     <a href="contact.html">Contact</a>
   </div>
-</header> -->
+</header>
 
 
   <section class="hero">
@@ -95,6 +82,38 @@
 </section>
 
 
+<!-- FAQ -->
+
+<section class="faq">
+
+  <button class="accordion">Where do you see yourself in 5 years?</button>
+  <div class="panel">
+    <p>I'm really looking forward to see what happens when technology lifts the barrier of language. Making language learning obsolete and lifting all barriers to understand what other communities around the world hold dear, expect from the future, what thir struggles are. A long awaited dream come true?</p>
+  </div>
+
+  <button class="accordion">Where did you go to high-school?</button>
+  <div class="panel">
+    <p>I'm really looking forward to see what happens when technology lifts the barrier of language. Making language learning obsolete and lifting all barriers to understand what other communities around the world hold dear, expect from the future, what thir struggles are. A long awaited dream come true?</p>
+  </div>
+
+  <button class="accordion">What's you T-shape?</button>
+  <div class="panel">
+    <p>I'm really looking forward to see what happens when technology lifts the barrier of language. Making language learning obsolete and lifting all barriers to understand what other communities around the world hold dear, expect from the future, what thir struggles are. A long awaited dream come true?</p>
+  </div>
+
+  <button class="accordion">What's your strongest suit?</button>
+  <div class="panel">
+    <p>I'm really looking forward to see what happens when technology lifts the barrier of language. Making language learning obsolete and lifting all barriers to understand what other communities around the world hold dear, expect from the future, what thir struggles are. A long awaited dream come true?</p>
+  </div>
+  <button class="accordion">What do you suck at?</button>
+  <div class="panel">
+  <p>I'm really looking forward to see what happens when technology lifts the barrier of language. Making language learning obsolete and lifting all barriers to understand what other communities around the world hold dear, expect from the future, what thir struggles are. A long awaited dream come true?</p>
+  </div>
+
+</section>
+
+
+<!-- Back to Top -->
 <div>
     <a href="#top" alt="back to top"><img src="img/icons/arrow-up.svg"></a>
 </div>
@@ -118,6 +137,23 @@
 
   </footer>
 </section>
+
+<script type="text/javascript">
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
 
 </body>
 </html>

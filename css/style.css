@@ -10,11 +10,6 @@
   -ms-user-select: none; */
 }
 
-$navy:#0D203F;
-$blue:#00B0ED;
-$cream:#0D203F;
-$cultured:#FEF4DD;
-
 
 @-webkit-keyframes fadeIn {
   from {
@@ -236,7 +231,7 @@ h5 {
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
-    color:$blue;
+    color:#00B0ED;
   }
 
 
@@ -245,7 +240,7 @@ h5 {
     letter-spacing: 2px;
     text-align: center;
     margin:16px 0px;
-    color:$blue;
+    color:#00B0ED;
   }
 
   .resume .overline {
@@ -253,7 +248,7 @@ h5 {
       letter-spacing: 2px;
       text-align: left;
       margin:16px 0px;
-      color:$blue;
+      color:#00B0ED;
     }
 
 
@@ -739,6 +734,7 @@ margin-top: 72px;
   /* outline: 10px solid hotpink; */
 }
 
+
 /* Image comparison Slider*/
 
 .comp-wrap {
@@ -851,10 +847,6 @@ margin-top: 72px;
   color: white;
   cursor: pointer;
 }
-
-
-
-
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {

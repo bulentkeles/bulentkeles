@@ -565,6 +565,14 @@ span.dot {
 }
 
 
+::placeholder {
+  font-family: 'termina', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  color: rgba(0,0,0,.32);
+}
+
 .btn {
   font-family: 'termina', sans-serif;
   color: #00B0ED;
@@ -859,7 +867,6 @@ margin-top: 72px;
   text-align: center;
 }
 
-
 /* Closable button inside the image */
 .closebtn {
   position: absolute;
@@ -896,12 +903,13 @@ input[type=submit]:hover {
 }
 
 /* Add a background color and some padding around the form */
-.container {
+.contact-container {
   margin: 0 auto;
   border-radius: 12px;
   padding: 20px;
   max-width:640px;
   margin-bottom: 120px;
+  text-align: left;
 }
 
 

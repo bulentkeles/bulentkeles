@@ -962,14 +962,16 @@ input[type=submit]:hover {
 
 /* FAQ */
 .faq {
-  margin: 120px 0px;
+  margin:auto;
+  margin-bottom: 120px;
+  width: 100%;
+  max-width:1240px;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
   background-color: rgba(255, 255, 255, 0.04);
   border: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
   color: #fff;
   cursor: pointer;
   padding: 24px;
@@ -997,6 +999,7 @@ button.accordion {
   float: right;
 }
 
+
 .accordion.active:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
@@ -1014,12 +1017,19 @@ button.accordion {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   max-width:1240px;
+  margin-bottom: 2px;
+  color:#fff;
 }
+@media (max-width:767px) {
+  .panel {
+    font-size: 12px;
+  }
+}
+
 
 .panel p {
   padding: 24px;
 }
-
 
 
 

@@ -10,6 +10,11 @@
   -ms-user-select: none; */
 }
 
+$navy:#0D203F;
+$blue:#00B0ED;
+$cream:#0D203F;
+$cultured:#FEF4DD;
+
 
 @-webkit-keyframes fadeIn {
   from {
@@ -231,7 +236,7 @@ h5 {
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
-    color:#00B0ED;
+    color:$blue;
   }
 
 
@@ -240,7 +245,7 @@ h5 {
     letter-spacing: 2px;
     text-align: center;
     margin:16px 0px;
-    color:#00B0ED;
+    color:$blue;
   }
 
   .resume .overline {
@@ -248,7 +253,7 @@ h5 {
       letter-spacing: 2px;
       text-align: left;
       margin:16px 0px;
-      color:#00B0ED;
+      color:$blue;
     }
 
 
@@ -734,26 +739,6 @@ margin-top: 72px;
   /* outline: 10px solid hotpink; */
 }
 
-/* colours */
-.color-oxfordblue {
-  background-color: #0D203F;
-}
-.color-cyanprocess {
-  background-color: #00B0ED;
-}
-.color-papayawhip {
-  background-color: #FEF4DD;
-}
-.color-cultured {
-  background-color: #F9F9FB;
-}
-
-
-
-
-
-
-
 /* Image comparison Slider*/
 
 .comp-wrap {
@@ -942,6 +927,8 @@ header {
   background-color: #00B0ED;
   color: white;
 }
+
+
 
 
 
